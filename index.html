@@ -7,30 +7,33 @@
     <meta name="description" content="Nimrod Garcia's Front End Developer Website">
     <meta name="keywords" content="nim's portfolio, nimrod garcia, nimrod, nimsum">
     <meta name="author" content="Nimrod Garcia"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Nim's Portfolio</title>
   </head>
   <body>
-    <div class="container">
-	    <nav class="navbar">
-	  		<a class="navbar-brand" href="#">Nimrod Garcia</a>
-		    	<ul class="nav justify-content-end">
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Active</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Link</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Link</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Disabled</a>
-				  </li>
-				</ul>
-		</nav>
-    </div>
+  	<nav class="navbar navbar-expand-lg navbar-expand-md">
+  		<a class="navbar-brand" href="#">Nimrod Garcia</a>
+  		<button  class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarNavDropDown" aria-controls="navbarNavDropDown" aira-expanded="false" aria-label="Toggle Navigation">
+  		</button>
+  		<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropDown">
+  			<ul class="navbar-nav">	
+  				<li class="nav-item active">
+  					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+  				</li>
+  				<li class="navbar-item">
+  					<a class="nav-link" href="#">About</a>
+  				</li>
+  				<li class="navbar-item">
+  					<a class="nav-link" href="#myWork">Portfolio</a>
+  				</li>
+  				<li class="navbar-item">
+  					<a class="nav-link" href="#">Contact</a>
+  				</li>
+  			</ul>
+  		</div>
+  	</nav>
+
 <!-- JUMBOTRONNNN -->
     <div class="container jumbotron">
 	  <h1 class="display-4">Nim's Portfolio</h1>
@@ -40,41 +43,54 @@
 	  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
 	  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 	</div>
+
+<!-- ABOUT ME --->
+	<div class="container">
+		<h3>About Me:</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	</div>
 <!-- PORTFOLIO PAGES -->
-	<div class="container-fluid row justify-content-md-center">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		  <ol class="carousel-indicators">
-		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		  </ol>
-		  <div class="carousel-inner">
-		    <div class="carousel-item active">
-		      <img class="d-block w-100" src="images/coolcat.jpg" alt="First slide">
-		    </div>
-		    <div class="carousel-item">
-		      <img class="d-block w-100" src="images/bulletcat.jpg" slide" alt="Second slide">
-		    </div>
-		    <div class="carousel-item">
-		      <img class="d-block w-100" src="images/seriouscat.jpg" alt="Third slide">
-		    </div>
+ 	<div class="container-fluid col-lg-10"> <!--Max width for large screens-->
+ 		<h4 id="myWork">My Work</h4>
+	    <div class="row">
+		  <div class="col-sm-6 col-md-4"> <!-- Sets width 1/3 of screen for med, 1/2 for tablets -->
+		     <div class="portfolio card col-md-12"> <!-- sets width and adds a border in between divs-->
+		       <img class="card-img-top" src="images/coolcat.jpg" alt="Cool cat picture">
+				<div class="card-body">
+					<h5 class="card-title">Card Title</h5>
+					<p class="card-text">Cat cooler than me</p>
+					<a href="#" class="btn btn-info">Link</a>
+				</div>
+		     </div>
 		  </div>
-		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
+		  <div class="col-sm-6 col-md-4"> 
+		     <div class="portfolio card col-md-12"> 
+		       <img class="card-img-top" src="images/coolcat.jpg" alt="Cool cat picture">
+				<div class="card-body">
+					<h5 class="card-title">Card Title</h5>
+					<p class="card-text">Cat cooler than me</p>
+					<a href="#" class="btn btn-info">Link</a>
+				</div>
+		     </div>
+		  </div>
+		  <div class="col-sm-12 col-md-4"> 
+		     <div class="portfolio card col-md-12"> 
+		       <img class="card-img-top" src="images/coolcat.jpg" alt="Cool cat picture">
+				<div class="card-body">
+					<h5 class="card-title">Card Title</h5>
+					<p class="card-text">Cat cooler than me</p>
+					<a href="#" class="btn btn-info">Link</a>
+				</div>
+		     </div>
+		  </div>
 		</div>
 	</div>
-
-    
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
