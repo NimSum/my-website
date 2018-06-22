@@ -2,8 +2,10 @@
 	color: #363942
 }
 
-body {
+body, html {
 	background-color: #D8CAA8;
+	height:100%;
+	width:100%;
 }
 
 #myWork {
@@ -11,7 +13,6 @@ body {
 }
 
 .portfolio {
-	background-color: #284907;
 	text-align: center;
 	padding:0px;
 	overflow: auto;
@@ -23,13 +24,16 @@ body {
 .jumbotron {
 	background-image: url("/images/coolcat.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size:cover;
+	height:100%;
+	width:100%;
 	color:white;
+	max-width: : 28em;
 }
 
 .navbar {
 	background-color: #284907;
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 	opacity: .9;
 }
 .navbar-nav{
