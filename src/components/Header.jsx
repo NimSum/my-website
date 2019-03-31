@@ -9,7 +9,7 @@ export class Header extends Component {
         <nav>
           <ul>
             <li>HOME</li>
-            <li>AOUT</li>
+            <li>ABOUT</li>
             <li>PORTFOLIO</li>
             <li>CONTACT</li>
           </ul>
