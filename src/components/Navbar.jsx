@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import './Header.scss'
+import './Navbar.scss'
 
-export class Header extends Component {
+export class Navbar extends Component {
   render() {
     return (
-      <header>
-        <h1>NG</h1>  
+      <header> 
         <nav>
           <ul>
-            <li>HOME</li>
             <li>ABOUT</li>
             <li>PORTFOLIO</li>
             <li>CONTACT</li>
@@ -19,4 +17,4 @@ export class Header extends Component {
   }
 }
 
-export default Header
+export default Navbar

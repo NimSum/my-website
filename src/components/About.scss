@@ -1,0 +1,21 @@
+section.about-section {
+  background: linear-gradient(180deg, rgba(154,182,196,1) 0%, rgba(234,236,236,1) 14%, rgba(255,255,255,1) 23%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      
+  img {
+    border-radius: 50%;
+    width: 10%;
+    border: 2px solid black;
+  }
+
+  h3 {
+
+  }
+  article {
+    border: 1px dashed black;
+    width: 50%;
+  }
+
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 import Splash from './components/Splash';
 import About from './components/About';
 import Porfolio from './components/Portfolio';
@@ -10,8 +10,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Navbar />
         <Splash />
+        <About />
       {/* HEADER
           SPLASH
           ABOUT
