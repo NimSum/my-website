@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
 import './index.scss';
-import Navbar from './components/Navbar';
 import Splash from './components/Splash';
-import About from './components/About';
-import Porfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import MainSection from './components/MainSection';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Splash />
-        <About />
+        < Splash />
+        < MainSection />
       {/* HEADER
           SPLASH
           ABOUT

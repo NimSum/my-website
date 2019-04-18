@@ -3,6 +3,7 @@ header {
   position: absolute;
   top: 0;
   margin: 10px;
+  z-index: inherit;
 
   nav {
     width: 95vw;
@@ -17,7 +18,7 @@ header {
         padding: 1rem 1.5rem;
         border-radius: 20px;
         &:hover {
-          background-color: rgba(135, 206, 235, .7);
+          background-color: hsla(197, 71%, 73%, 0.9);
           cursor: pointer;
         }
       }

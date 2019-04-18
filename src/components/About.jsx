@@ -4,10 +4,8 @@ import Navbar from './Navbar';
 export default function About() {
   return (
   <section className="about-section">
-    < Navbar />
     <article>
       <h3>
-        
         Nimrod Garcia,
       </h3>
       <img src={require('../images/nimsum.jpg')} alt="Nim's Portrait"/> 
