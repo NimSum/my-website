@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Splash.scss';
 export class Splash extends Component {
   stuff() {
     console.log('hi')

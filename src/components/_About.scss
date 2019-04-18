@@ -3,6 +3,8 @@ section.about-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  position: relative;
       
   img {
     border-radius: 50%;
@@ -10,9 +12,6 @@ section.about-section {
     border: 2px solid black;
   }
 
-  h3 {
-
-  }
   article {
     border: 1px dashed black;
     width: 50%;

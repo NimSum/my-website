@@ -1,9 +1,10 @@
 section.splash {
   display: flex;
-  background: url('../images/splash.jpg') no-repeat;
+  background: url('./images/splash.jpg') no-repeat;
   position: relative;
   background-size: cover;
   display: flex;
+  align-items: center;
   justify-content: center;
 
   h1 {
@@ -15,7 +16,6 @@ section.splash {
     padding: 10px;
 
     p {
-      margin-top: 22%;
       font-size: 2rem;
     }
 
