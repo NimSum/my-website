@@ -6,13 +6,17 @@ export class Splash extends Component {
   render() {
     return (
       <section className="splash">
-        <h1>Hi</h1>
-        <div className="splash-intro">
-          <p>I'm Nimrod Garcia, a Front-end Software Engineer</p>
-        </div>
-        <span className="photo-credit">Photo by Joel Filipe on Unsplash</span>
+        <article>
+          <h1>Hi</h1>
+          <div className="splash-intro">
+            <p>I'm Nimrod Garcia, </p>  
+            <p>a Front-end Software Engineer</p>
+          </div>
+        </article>
         <div className="arrow-down" onClick={this.stuff}>
         </div>
+        <span className="arrow-down-desc">ABOUT</span>
+        <span className="photo-credit">Photo by Joel Filipe on Unsplash</span>
       </section>
     )
   }

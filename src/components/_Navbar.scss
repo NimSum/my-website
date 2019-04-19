@@ -1,14 +1,14 @@
 
 header {
-  position: absolute;
   top: 0;
+  width: 100vw;
   margin: 10px;
   z-index: inherit;
+  position: absolute;
 
   nav {
-    width: 95vw;
-
     ul {
+      margin: auto;
       display: flex;
       justify-content: center;
       list-style-type: none;

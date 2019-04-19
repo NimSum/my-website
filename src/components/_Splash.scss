@@ -6,19 +6,38 @@ section.splash {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  font-family: $primary-font;
 
-  h1 {
-    font-size: 15rem;
-    font-weight: 500;
+  article {
+    display: flex;
+    align-items: flex-end; 
+    flex-wrap: wrap;
+
+    h1 {
+      font-size: 15rem;
+      margin: 0;
+      font-weight: lighter;
+    }
+  
+    div.splash-intro {
+      padding: 10px;
+      border: 2px solid purple;
+      border-radius: 20px;
+      height: 50%;
+      margin: 65px 30px;
+      min-width: 290px;
+      p {
+        font-size: 2rem;
+      }
+    }
   }
 
-  div.splash-intro {
-    padding: 10px;
-
-    p {
-      font-size: 2rem;
-    }
-
+  .arrow-down-desc {
+    position: absolute;
+    bottom: 8%;
+    color: white;
+    z-index: 1;
   }
 
   .arrow-down {
@@ -28,17 +47,18 @@ section.splash {
     width: 100px;
     border-style: solid;
     border-color: white;
-    border-width: 0px 6px 6px 0px;
-    transform: rotate(45deg);
-    transition: 150ms ease-in-out;
-    border-radius: 5px;
+    border-width: 6px;
+    transition: 350ms ease-in-out;
+    border-radius: 10px;
     position: absolute;
     bottom: 4%;
+    z-index: 2;
+    cursor: pointer;
   }
 
   .arrow-down:hover {
-    border-bottom-width: 8px;
-    border-right-width: 8px;
+    border-width: 0px 6px 6px 0px;
+    transform: scale(1.2) rotate(45deg);;
     border-color: lightblue;
   }
 
@@ -48,6 +68,6 @@ section.splash {
     right: 0;
     color: white;
     padding: 10px;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px gray;
   }
 }
