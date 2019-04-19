@@ -13,20 +13,22 @@ section.splash {
     display: flex;
     align-items: flex-end; 
     flex-wrap: wrap;
+    background-color: $bgc-light;
+    padding: 0;
+    border-radius: 30px;
 
     h1 {
       font-size: 15rem;
-      margin: 0;
+      margin-left: 20px;
       font-weight: lighter;
+      color: $secondary-dark;
     }
   
     div.splash-intro {
-      padding: 10px;
-      border: 2px solid purple;
-      border-radius: 20px;
       height: 50%;
-      margin: 65px 30px;
+      margin: 0px 30px 65px 10px;
       min-width: 290px;
+      color: $primary-dark;
       p {
         font-size: 2rem;
       }
@@ -35,7 +37,7 @@ section.splash {
 
   .arrow-down-desc {
     position: absolute;
-    bottom: 8%;
+    bottom: 10%;
     color: white;
     z-index: 1;
   }
@@ -51,7 +53,7 @@ section.splash {
     transition: 350ms ease-in-out;
     border-radius: 10px;
     position: absolute;
-    bottom: 4%;
+    bottom: 6%;
     z-index: 2;
     cursor: pointer;
   }
@@ -59,11 +61,12 @@ section.splash {
   .arrow-down:hover {
     border-width: 0px 6px 6px 0px;
     transform: scale(1.2) rotate(45deg);;
-    border-color: lightblue;
+    border-color: $primary-light;
   }
 
   .photo-credit {
     position: absolute;
+    font-size: .8rem;
     bottom: 0;
     right: 0;
     color: white;

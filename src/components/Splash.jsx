@@ -10,7 +10,7 @@ export class Splash extends Component {
           <h1>Hi</h1>
           <div className="splash-intro">
             <p>I'm Nimrod Garcia, </p>  
-            <p>a Front-end Software Engineer</p>
+            <p>a Front-end Software Developer</p>
           </div>
         </article>
         <div className="arrow-down" onClick={this.stuff}>
