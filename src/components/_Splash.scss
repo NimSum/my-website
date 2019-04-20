@@ -16,6 +16,7 @@ section.splash {
     background-color: $bgc-light;
     padding: 0;
     border-radius: 30px;
+    position: relative;
 
     h1 {
       font-size: 15rem;
@@ -33,11 +34,25 @@ section.splash {
         font-size: 2rem;
       }
     }
+
+    .icon-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 5px;
+      opacity: .7;
+
+      img {
+        width: 50px;
+        margin: 10px;
+      }
+    }
   }
 
   .arrow-down-desc {
     position: absolute;
-    bottom: 10%;
+    bottom: 11.2%;
+    text-shadow: 1px 1px 4px $primary-dark;
     color: white;
     z-index: 1;
   }
@@ -45,8 +60,8 @@ section.splash {
   .arrow-down {
     box-sizing: border-box;
     margin: auto;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     border-style: solid;
     border-color: white;
     border-width: 6px;
@@ -59,8 +74,8 @@ section.splash {
   }
 
   .arrow-down:hover {
-    border-width: 0px 6px 6px 0px;
-    transform: scale(1.2) rotate(45deg);;
+    border-width: 0px 8px 8px 0px;
+    transform: scale(.9) rotate(45deg);;
     border-color: $primary-light;
   }
 
