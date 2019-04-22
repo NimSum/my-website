@@ -1,30 +1,74 @@
 section.about-section {
-  background: linear-gradient(180deg, hsl(200, 26%, 69%) 0%, hsl(180, 5%, 92%) 14%, hsl(0, 0%, 100%) 23%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-      
-  article {
-    border: 1px dashed black;
-    width: 50%;
-    // display: flex;
-    // flex-direction: column;
-
-    div.name-pic-container {
-      width: 10%;
-
-      img {
-        border-radius: 50%;
-        width: 100%;
-        height: 100%;
-        border: 2px solid black;
-      }
-      h3 {
-        white-space: nowrap;
-      }
+  background: url('./images/bg-cont-1.svg');
+  background-size: cover;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+    "story soft-skills" 
+    "story technical-skills";
   
+  article {
+    border: 2px solid $secondary-light;
+  }
+
+  article.my-story {
+    grid-area: story;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include box-styling;
+
+    p {
+      text-indent: 2rem;
     }
+
+    h4 {
+      margin: 5px;
+    }
+    
+    section {
+      padding: 15px 5px;
+      margin: 10px 0;
+      border-bottom: 2px solid $primary-light;
+    }
+
+    section.my-story-beginning {
+      div.title-container {
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 2px solid $primary-light;
+
+        img {
+          border-radius: 50%;
+          width: 30%;
+          border: 2px solid $primary-light;
+        }
+
+        h3 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    section.my-story-software {
+      border: none;
+    }
+  }
+  
+  article.soft-skills {
+    grid-area: soft-skills;
+
+  }
+
+  article.technical-skills {
+    grid-area: technical-skills;
+  }
+
+  article.soft-skills,
+  article.technical-skills {
+    @include box-styling;
+    margin-left: 5px;
   }
 
 }

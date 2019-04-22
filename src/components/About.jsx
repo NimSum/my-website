@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import TechStack from './TechStack';
+import Portfolio from './Portfolio';
 export class About extends Component {
   constructor() {
     super();
@@ -11,16 +12,31 @@ export class About extends Component {
   render() {
     return (
       <section className="about-section">
-        <article>
-          <div className="name-pic-container">
+        <article className="my-story">
+          <section className="my-story-beginning">
+          <div className="title-container">
             <img src={require('../images/nimsum.jpg')} alt="Nim's Portrait"/> 
-            <h3>
-              Nimrod Garcia,
-            </h3>
+            <h3 className="story-title">My Story</h3>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquam expedita sed quisquam animi assumenda tempore, iure qui in ad omnis enim tenetur dolore! Molestias dolorum commodi fuga omnis culpa.</p>
-          <p>Skills</p>
+            <h4 className="story-beginning">Born and raised in the Philippines,</h4>
+            <p>At the age of 13, my family immigrated to Texas, beginning my journey that has brought me here</p>
+          </section>
+          <section className="my-story-military">
+            <h4>USAF Veteran,</h4>
+            <p>I joined the U.S Air-force after high school and served as an Aircraft Technician for 6 Years. I am now a <span>proud  military veteran.</span></p>
+          </section>
+          <section className="my-story-software">
+            <h4>Software Engineer,</h4>
+            <p>I am now pursuing a career path that I've always had <span>passion</span> for, a career in the Tech Industry.</p>
+          </section>
         </article>
+        <article className="soft-skills">
+          stuff
+        </article>
+        <article className="technical-skills">
+          stuff
+        </article>
+        {/* < Portfolio /> */}
         {/* < TechStack /> */}
       </section>
     )

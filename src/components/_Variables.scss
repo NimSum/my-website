@@ -9,4 +9,16 @@ $secondary-light: hsl(191, 76%, 38%);
 $primary-dark: hsl(222, 50%, 29%);
 $secondary-dark: hsl(204, 64%, 33%);
 
+// 355c7d
+// 3f72af
+// 112d4e
+
 $bgc-light: hsla(200, 76%, 90%, .5);
+$nav-bgc: #71c9ce;
+$hover-bgc-nav: #e3fdfd;
+
+@mixin box-styling {
+  margin: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
