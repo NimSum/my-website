@@ -1,5 +1,30 @@
 section.contact-section {
+  height: 20vw;
+  background-color: $primary-light;
 
+  article {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+
+    div.contact-intro {
+      text-align: center;
+
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    
+    div.icon-container {
+      display: flex;
+      justify-content: space-around;
+      a img {
+      width: 75px;
+      margin: 25px;
+      }
+    }
+  }
   div.input-container {
     display: flex;
     flex-direction: column;
@@ -30,8 +55,5 @@ section.contact-section {
       width: 50%;
       margin: auto;
     }
-
-
-
   }
 }

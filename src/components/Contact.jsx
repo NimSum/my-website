@@ -14,8 +14,11 @@ export class Contact extends Component {
   }
 
   email() { 
-    const coded = "BRP.v9IqR9@W9bzz.qzP";
-    const key = "ynV6b3xdv1Ica2SFEzKLWBjTJpH75Otq9MfwZkQAimXsU4huCYgGr0eDN8loRP";
+    const coded = "BF22.onOWFn@o2nFj.W82";
+    const key = "lLCvh2fqQW9po5b10HUOBjdi6DNyRXtkY8ZwEM4TaJPVFSm7sIcA3guKxGezrn"; 
+    // YAHOO
+    // const coded = "BRP.v9IqR9@W9bzz.qzP";
+    // const key = "ynV6b3xdv1Ica2SFEzKLWBjTJpH75Otq9MfwZkQAimXsU4huCYgGr0eDN8loRP";
     const shift = coded.length;
     let link = "";
     let ltr;
@@ -29,7 +32,7 @@ export class Contact extends Component {
         link += (key.charAt(ltr))
       }
     }
-    this.setState( {email: `mailto:${link}`});
+    this.setState( {email: link} );
   }
 
   inputHandler = e => {
@@ -67,32 +70,44 @@ export class Contact extends Component {
   
   render() {
     return (
-      <section
-        className="contact-section">
-        <div className="contact-intro">
-          <h3>Send me a message!</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, facere!</p>
-        </div>
-        <form  action={this.state.email}>
+      <section className="contact-section">
+        <article>
+          <div className="contact-intro">
+            <h3>Let's get in touch!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, facere!</p>
+          </div>
+          <div className="icon-container">
+            <a href="https://github.com/NimSum" target="_blank" rel="noopener noreferrer">
+                <img src={require('../images/github.svg')} alt="github" />
+              </a>
+              <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer">
+                <img src={require('../images/linked-in.svg')} alt="linked in" />
+              </a>
+              <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer">
+                <img src={require('../images/mail.svg')} alt="mail" />
+              </a>
+          </div>
+        </article>
+        <form action={`https://formspree.io/${this.state.email}`} method="POST">
           <div className="input-container">
             <label htmlFor="sender-name">Your name:</label>
             <input 
               onChange={this.inputHandler}
-              name="sender-name" 
+              name="name" 
               id="sender-name" 
               type="text">
             </input>
             <label htmlFor="sender-email">Your e-mail:</label>
             <input 
               onChange={this.inputHandler}
-              name="sender-email" 
+              name="email" 
               id="sender-email" 
               type="text">
             </input>
             <label htmlFor="message">Your message:</label>
             <textarea 
               onChange={this.inputHandler}
-              name="body" 
+              name="message" 
               id="message" 
               type="text">
             </textarea>

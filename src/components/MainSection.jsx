@@ -9,7 +9,7 @@ export class MainSection extends Component {
       <main className="main-section">
         < Navbar />
         < About />
-        < Contact />
+        {/* < Contact /> */}
       </main>
     )
   }
