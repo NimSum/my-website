@@ -11,7 +11,7 @@ export class About extends Component {
 
   render() {
     return (
-      <section className="about-section">
+      <section className="about-section" id="about">
         <article className="my-story">
           <section className="my-story-beginning">
           <div className="title-container">

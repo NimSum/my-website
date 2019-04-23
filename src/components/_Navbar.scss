@@ -7,17 +7,23 @@ header {
 
 
   nav {
+    height: 100%;
+
     ul {
+      line-height: 5.2vh;
       margin: auto;
       display: flex;
       justify-content: center;
       list-style-type: none;
       border-radius: 20px;
-
+      
       li {
-        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+        padding: 0 30px;
+
         &:hover {
           background-color: $hover-bgc-nav;
+          font-weight: bold;
           cursor: pointer;
         }
       }

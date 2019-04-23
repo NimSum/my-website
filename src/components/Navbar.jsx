@@ -6,9 +6,9 @@ export class Navbar extends Component {
       <header> 
         <nav>
           <ul>
-            <li>ABOUT</li>
-            <li>PORTFOLIO</li>
-            <li>CONTACT</li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </header>

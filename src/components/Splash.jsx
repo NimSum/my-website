@@ -5,7 +5,7 @@ export class Splash extends Component {
   }
   render() {
     return (
-      <section className="splash">
+      <section className="splash" id="home">
         <article>
           <h1>Hi</h1>
           <div className="splash-intro">

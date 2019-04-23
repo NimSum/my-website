@@ -70,21 +70,21 @@ export class Contact extends Component {
   
   render() {
     return (
-      <section className="contact-section">
+      <section className="contact-section" id="contact">
         <article>
           <div className="contact-intro">
             <h3>Let's get in touch!</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, facere!</p>
           </div>
           <div className="icon-container">
-            <a href="https://github.com/NimSum" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/NimSum" target="_blank" rel="noopener noreferrer" title="Github">
                 <img src={require('../images/github.svg')} alt="github" />
               </a>
-              <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                 <img src={require('../images/linked-in.svg')} alt="linked in" />
               </a>
               <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer">
-                <img src={require('../images/mail.svg')} alt="mail" />
+                <img src={require('../images/mail.svg')} alt="mail" title="Direct email"/>
               </a>
           </div>
         </article>
@@ -114,6 +114,7 @@ export class Contact extends Component {
             <input 
               className="submit-btn"
               type="submit"
+              value="Send"
               disabled={!this.state.enabled}>
             </input>
           </div>
