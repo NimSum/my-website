@@ -37,6 +37,17 @@ const projects = [
     "id": "3"
   },
   {
+    "title": "Connect Four",
+    "description": "A replication of the game connect four!",
+    "team" : "Solo Project",
+    "toolsUsed": ["HTML", "CSS", "JS"],
+    "concepts": ["Vanilla JS", "Array Prototypes", "Game Structure Design"],
+    "src": "https://github.com/NimSum/connect-four-game",
+    "staticSite": "https://nimsum.github.io/connect-four-game/index.html",
+    "imgURL": "../images/connectFour.jpg",
+    "id": "6"
+  },
+  {
     "title": "Static Page Recreation",
     "description": "Re-create a complex page layout, including my own styling and animations",
     "team" : "Solo Project",
@@ -57,17 +68,6 @@ const projects = [
     "staticSite": "https://nimsum.github.io/foto-finder/",
     "imgURL": "../images/foto-finder.jpg",
     "id": "5"
-  },
-  {
-    "title": "Connect Four",
-    "description": "A replication of the game connect four!",
-    "team" : "Solo Project",
-    "toolsUsed": ["HTML", "CSS", "JS"],
-    "concepts": ["Vanilla JS", "Array Prototypes", "Game Structure Design"],
-    "src": "https://github.com/NimSum/connect-four-game",
-    "staticSite": "https://nimsum.github.io/connect-four-game/index.html",
-    "imgURL": "../images/connectFour.jpg",
-    "id": "6"
   }
 ]
 
