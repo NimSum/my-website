@@ -22,6 +22,7 @@ export class Splash extends Component {
           </div>
         </article>
         <div className="arrow-down" onClick={this.stuff}>
+        <a href="#about">About me</a>
         </div>
         <span className="arrow-down-desc">ABOUT ME</span>
         <span className="photo-credit">Photo by Joel Filipe on Unsplash</span>

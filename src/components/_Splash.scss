@@ -72,6 +72,12 @@ section.splash {
     bottom: 6%;
     z-index: 2;
     cursor: pointer;
+
+    a {
+      display: block;
+      height: 100%;
+      font-size: 0;
+    }
   }
 
   .arrow-down:hover {

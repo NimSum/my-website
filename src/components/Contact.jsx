@@ -90,21 +90,21 @@ export class Contact extends Component {
         </article>
         <form action={`https://formspree.io/${this.state.email}`} method="POST">
           <div className="input-container">
-            <label htmlFor="sender-name">Your name:</label>
+            <label htmlFor="sender-name">* Your name:</label>
             <input 
               onChange={this.inputHandler}
               name="name" 
               id="sender-name" 
               type="text">
             </input>
-            <label htmlFor="sender-email">Your e-mail:</label>
+            <label htmlFor="sender-email">* Your e-mail:</label>
             <input 
               onChange={this.inputHandler}
               name="email" 
               id="sender-email" 
               type="text">
             </input>
-            <label htmlFor="message">Your message:</label>
+            <label htmlFor="message">* Your message:</label>
             <textarea 
               onChange={this.inputHandler}
               name="message" 

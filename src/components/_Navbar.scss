@@ -7,8 +7,6 @@ header {
 
 
   nav {
-    height: 100%;
-
     ul {
       line-height: 5.2vh;
       margin: auto;
@@ -19,7 +17,12 @@ header {
       
       li {
         font-size: 1.1rem;
-        padding: 0 30px;
+        
+        a {
+          padding: 0 30px;
+          display: block;
+          text-decoration: none;
+        }
 
         &:hover {
           background-color: $hover-bgc-nav;
