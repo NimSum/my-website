@@ -14,8 +14,8 @@ $secondary-dark: hsl(204, 64%, 33%);
 // #112d4e // 
 
 $bgc-light: hsla(200, 76%, 90%, .5);
-$nav-bgc: #71c9ce;
-$hover-bgc-nav: #e3fdfd;
+$nav-bgc: hsl(183, 49%, 63%);
+$hover-bgc-nav: hsl(180, 87%, 94%);
 
 @mixin box-styling {
   margin: 20px;

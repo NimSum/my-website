@@ -16,7 +16,6 @@ section.portfolio-section {
     padding: 1%;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     justify-items: center;
-    background-color: #fff;
 
     &::-webkit-scrollbar {
       width: 0px;
