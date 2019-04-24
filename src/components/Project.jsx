@@ -18,20 +18,20 @@ export class Project extends Component {
           <h3>{ this.props.title }</h3>
           <h4>{ this.props.description }</h4>
           <div className="info-box">
-          { Array.isArray(this.props.team) 
-            ? <p>
-                <span span className="title">Team:</span>
-                {this.props.team.map((person, idx) => 
-                  <span key={ idx }>
-                    <a href={ Object.values(person) }>
-                      { Object.keys(person) }
-                    </a>
-                </span>)}
-              </p>
-            : <p className="solo-project">{ this.props.team }</p> 
-          }
-          <p><span className="title">Tools:</span>{ this.props.toolsUsed.map(tool => <span>{ tool }</span>)}</p>
-          <p><span className="title">Concepts:</span>{ this.props.concepts.map(concept => <span>{ concept }</span>)}</p>
+            { Array.isArray(this.props.team) 
+              ? <p className="team-box">
+                  <span span className="title">Team:</span>
+                  {this.props.team.map((person, idx) => 
+                    <span key={ idx }>
+                      <a href={ Object.values(person) }>
+                        { Object.keys(person) }
+                      </a>
+                  </span>)}
+                </p>
+              : <p className="solo-project">{ this.props.team }</p> 
+            }
+            <p><span className="title">Tools:</span>{ this.props.toolsUsed.map(tool => <span>{ tool }</span>)}</p>
+            <p><span className="title">Concepts:</span>{ this.props.concepts.map(concept => <span>{ concept }</span>)}</p>
           </div>
         </section>
         <div className="icon-container">
