@@ -3,15 +3,29 @@ section.portfolio-section {
   background-size: cover;
   
   h2 {
-    padding-top: 7%;
+    padding-top: 7vh;
     text-align: center;
   }
   
   div.projects-container {
+    overflow: scroll;
+    height: 75vh;
     display: grid;
-    grid-gap: 2%;
-    padding: 1% 7%;
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    max-width: 1050px;
+    margin: auto;
+    padding: 1%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     justify-items: center;
+    background-color: #fff;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;  
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #FF0000;
+    }
   }
+
+
 }
