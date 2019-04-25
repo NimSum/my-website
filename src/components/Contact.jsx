@@ -17,9 +17,6 @@ export class Contact extends Component {
   email() { 
     const coded = "BF22.onOWFn@o2nFj.W82";
     const key = "lLCvh2fqQW9po5b10HUOBjdi6DNyRXtkY8ZwEM4TaJPVFSm7sIcA3guKxGezrn"; 
-    // YAHOO
-    // const coded = "BRP.v9IqR9@W9bzz.qzP";
-    // const key = "ynV6b3xdv1Ica2SFEzKLWBjTJpH75Otq9MfwZkQAimXsU4huCYgGr0eDN8loRP";
     const shift = coded.length;
     let link = "";
     let ltr;
@@ -33,7 +30,9 @@ export class Contact extends Component {
         link += (key.charAt(ltr))
       }
     }
-    this.setState( {email: link} );
+    this.state.validEmail 
+      ? this.setState( {email: link} )
+      : this.setState( {email: ' ', enabled: false} );
   }
 
   inputHandler = e => {
@@ -58,13 +57,14 @@ export class Contact extends Component {
   validateInput = (email) => {
     const emailRegx = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b/;
     if(email) {
-      let validEmail = emailRegx.test(this.state.senderEmail);
-      if(validEmail) this.setState({validEmail: true});
+      let isValid = emailRegx.test(this.state.senderEmail);
+      this.setState({validEmail: isValid}, () => {
+        this.email();
+      })
     }
     if(this.state.senderName.length > 1 
       && this.state.senderMessage.length > 1 
       && this.state.validEmail) {
-        this.email();
         this.setState({enabled: true})
     }
   }

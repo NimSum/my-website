@@ -22,6 +22,11 @@ $bgc-light: hsla(200, 76%, 90%, .5);
 $nav-bgc: hsl(183, 49%, 63%);
 $hover-bgc-nav: hsl(180, 87%, 94%);
 
+.curr-section {
+  background-color: hsla(180, 87%, 94%, .5);
+  font-weight: bold;
+}
+
 @mixin box-styling {
   margin: 20px;
   padding: 0 10px;

@@ -29,7 +29,7 @@ export class Project extends Component {
               <div className="info-box">
                 { Array.isArray(this.props.team) 
                   ? <p className="team-box">
-                      <span span className="title">Team</span>
+                      <span className="title">Team</span>
                       {this.props.team.map((person, idx) => 
                         <span key={ idx }>
                           <a href={ Object.values(person) }
