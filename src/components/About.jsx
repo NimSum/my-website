@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-import TechStack from './TechStack';
-import Portfolio from './Portfolio';
+
 export class About extends Component {
   constructor() {
     super();
     this.state = {
-
     }
   }
 

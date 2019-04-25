@@ -122,6 +122,17 @@ export class Contact extends Component {
         </form>
         <footer>
           <p className="copy-right">Copyright &copy; {this.state.currDate.getFullYear()} Nimsum</p>
+          <section className="site-info">
+            <div>
+              <p>This page was built with:</p>
+              <img src={require('../images/react.svg')} alt="react" title="React"/>
+              <img src={require('../images/sass.svg')} alt="sass" title="SASS"/>
+              <img src={require('../images/aws.png')} alt="sass" title="AWS"/>
+            </div>
+            <a href="https://github.com/NimSum/my-website" title="Source" target="_blank" rel="noopener noreferrer"><p>Source</p>
+              <img src={require('../images/git-logo.png')} alt="sass" />
+            </a>
+          </section>
         </footer>
       </section>
     )

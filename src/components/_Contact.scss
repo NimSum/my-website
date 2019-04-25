@@ -78,9 +78,37 @@ section.contact-section {
     width: 100%;
     bottom: 0;
     text-align: center;
+    color: $primary-light;
 
     p.copy-right {
       margin: 10px;
+    }
+
+    section.site-info {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+
+      div, a {
+        padding: 5px 10px;
+        margin: 0 10px;
+        border-radius: 10px;
+      }
+
+      img {
+        width: 40px;
+
+        &:last-child {
+          border-radius: 30%;
+        }
+      }
+
+      a {
+        display: block;
+        color: $primary-light;
+        text-decoration: none;
+
+      }
     }
   }
 }
