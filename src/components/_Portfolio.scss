@@ -4,12 +4,13 @@ section.portfolio-section {
   
   h2 {
     padding-top: 7vh;
+    margin-bottom: 20px;
     text-align: center;
   }
   
   div.projects-container {
     overflow: scroll;
-    height: 75vh;
+    height: 76vh;
     display: grid;
     max-width: 1050px;
     margin: auto;

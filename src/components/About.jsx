@@ -13,6 +13,7 @@ export class About extends Component {
     return (
       <section className="about-section" id="about">
         <article className="my-story">
+        <div className="my-story-container">
           <section className="my-story-beginning">
           <div className="title-container">
             <img src={require('../images/nimsum.jpg')} alt="Nim's Portrait"/> 
@@ -29,6 +30,7 @@ export class About extends Component {
             <h4>Software Engineer,</h4>
             <p>I am now pursuing a career path that I've always had <span>passion</span> for, a career in the Tech Industry.</p>
           </section>
+          </div>
         </article>
         <article className="soft-skills">
           stuff
@@ -36,8 +38,9 @@ export class About extends Component {
         <article className="technical-skills">
           stuff
         </article>
-        {/* < Portfolio /> */}
-        {/* < TechStack /> */}
+        <div className="next-btn">
+            <a href="#portfolio">Portfolio</a>
+        </div>
       </section>
     )
   }

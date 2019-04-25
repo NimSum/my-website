@@ -19,6 +19,10 @@ section.about-section {
     flex-direction: column;
     @include box-styling;
 
+    div.my-story-container {
+      border: 2px solid $secondary-light;
+    }
+
     p {
       text-indent: 2rem;
     }

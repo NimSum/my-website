@@ -19,7 +19,7 @@ export class Project extends Component {
         onMouseEnter={this.showInfo}
         onMouseLeave={this.showInfo}>
         <img 
-          src={require(`../images/git-commander.jpg`)} 
+          src={require(`../images/${this.props.imgURL}`)} 
           alt={this.props.title}
           className="portfolio-img" />
         { this.state.showInfo &&
@@ -43,8 +43,10 @@ export class Project extends Component {
                   </p>
                 : <p className="solo-project">{ this.props.team }</p> 
               }
-              <p><span className="title">Tools</span>{ this.props.toolsUsed.map(tool => <span>{ tool }</span>)}</p>
-              <p><span className="title">Concepts</span>{ this.props.concepts.map(concept => <span>{ concept }</span>)}</p>
+              <p><span className="title">Tools</span>{ this.props.toolsUsed.map((tool, idx) => 
+                <span key={idx}>{ tool }</span>)}</p>
+              <p><span className="title">Concepts</span>{ this.props.concepts.map((concept, idx) => 
+                <span key={idx}>{ concept }</span>)}</p>
             </div>
           </section>)
         }

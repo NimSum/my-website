@@ -12,10 +12,13 @@ export class Portfolio extends Component {
         <div className="projects-container">
           { projects.map(project => 
             < Project 
-              {...project} 
               key={project.id}
-            />) 
+              {...project} 
+            />)
           }
+        </div>
+        <div className="next-btn">
+            <a href="#contact">Contact</a>
         </div>
       </section>
     )

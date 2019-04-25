@@ -9,7 +9,8 @@ export class Contact extends Component {
       senderName: '',
       senderEmail: '',
       senderMessage: '',
-      validEmail: false
+      validEmail: false,
+      currDate: new Date()
     }
   }
 
@@ -119,6 +120,9 @@ export class Contact extends Component {
             </input>
           </div>
         </form>
+        <footer>
+          <p className="copy-right">Copyright &copy; {this.state.currDate.getFullYear()} Nimsum</p>
+        </footer>
       </section>
     )
   }

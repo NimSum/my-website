@@ -7,7 +7,7 @@ const projects = [
     "concepts": ["User Stories", "Organized Workflow", "TDD", "API Fetches"],
     "src": "https://github.com/NimSum/git-commander",
     "staticSite": "https://nimsum.github.io/git-commander/",
-    "imgURL": "../images/git-commander.jpg",
+    "imgURL": "git-commander.jpg",
     "id": "1"
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     "concepts": ["Team Work", "TDD", "Git Workflow", "API Fetches"],
     "src": "https://github.com/MaxBSilver/marvel-whateverly",
     "staticSite": "https://maxbsilver.github.io/marvel-whateverly/",
-    "imgURL": "../images/marvelously.jpg",
+    "imgURL": "marvelously.jpg",
     "id": "2"
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     "concepts": ["OOP", "TDD", "Paired Programming", "Git Workflow"],
     "src": "https://github.com/NimSum/wheel-of-mortys",
     "staticSite": "https://nimsum.github.io/wheel-of-mortys/",
-    "imgURL": "../images/wheelOfMortys.jpg",
+    "imgURL": "wheel-of-mortys.jpg",
     "id": "3"
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     "concepts": ["Vanilla JS", "Array Prototypes", "Game Structure Design"],
     "src": "https://github.com/NimSum/connect-four-game",
     "staticSite": "https://nimsum.github.io/connect-four-game/index.html",
-    "imgURL": "../images/connectFour.jpg",
+    "imgURL": "connect-four.jpg",
     "id": "6"
   },
   {
@@ -55,7 +55,7 @@ const projects = [
     "concepts": ["BEM/SMACSS", "Grid Areas", "Animations"],
     "src": "https://github.com/NimSum/ng-comp-challenge-2",
     "staticSite": "https://nimsum.github.io/ng-comp-challenge-2/",
-    "imgURL": "../images/static-page.jpg",
+    "imgURL": "static-comp.jpg",
     "id": "4"
   },
   {
@@ -66,7 +66,7 @@ const projects = [
     "concepts": ["es6", "Grid", "Local Storage"],
     "src": "https://github.com/NimSum/foto-finder",
     "staticSite": "https://nimsum.github.io/foto-finder/",
-    "imgURL": "../images/foto-finder.jpg",
+    "imgURL": "foto-finder.jpg",
     "id": "5"
   }
 ]

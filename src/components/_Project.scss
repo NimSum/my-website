@@ -3,7 +3,7 @@ article.project-box {
   margin: 20px;
   min-width: 390px; 
   max-width: 550px;
-  height: 300px;
+  height: 325px;
 
   a {
     text-decoration: none;
@@ -89,6 +89,8 @@ article.project-box {
   }
 
   div.icon-container {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     width: 12%;
     height: 100%;
     display: flex;

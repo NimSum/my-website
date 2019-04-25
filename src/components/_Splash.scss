@@ -52,7 +52,7 @@ section.splash {
 
   .arrow-down-desc {
     position: absolute;
-    bottom: 11.2%;
+    bottom: 100px;
     text-shadow: 1px 1px 4px $primary-dark;
     color: white;
     z-index: 1;
@@ -69,21 +69,21 @@ section.splash {
     transition: 350ms ease-in-out;
     border-radius: 10px;
     position: absolute;
-    bottom: 6%;
+    bottom: 50px;
     z-index: 2;
     cursor: pointer;
+
+    &:hover {
+      border-width: 0px 6px 6px 0px;
+      transform: scale(1.2) rotate(45deg);;
+      border-color: $primary-light;
+    }
 
     a {
       display: block;
       height: 100%;
       font-size: 0;
     }
-  }
-
-  .arrow-down:hover {
-    border-width: 0px 6px 6px 0px;
-    transform: scale(1.2) rotate(45deg);;
-    border-color: $primary-light;
   }
 
   .photo-credit {
