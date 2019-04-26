@@ -3,17 +3,26 @@ import React, { Component } from 'react'
 export class Navbar extends Component {
   constructor(props) {
     super(props);
-    this.prevPos = null;
+    this.prevPos = 0;
+    this.animationStyle = '';
     this.state = {
       currPosition: 'Home'
     }
   }
 
+  animationDirection = (totalHeight) => {
+    if (this.prevPos !== totalHeight) {
+      this.animationStyle =  this.prevPos < totalHeight 
+        ? 'slide-right' 
+        : 'slide-left';
+      this.prevPos = totalHeight;
+    };
+  }
+
   trackPosition = () => {
     window.addEventListener("scroll", () => {
       let totalHeight = Math.ceil((window.pageYOffset/document.body.scrollHeight) * 100);
-      console.log(this.prevPos <= totalHeight)
-      this.prevPos = totalHeight;
+      this.animationDirection(totalHeight);
       switch (true) {
         case totalHeight >= 24 && totalHeight <=47:
           if (this.state.currPosition !== 'about') {
@@ -45,13 +54,13 @@ export class Navbar extends Component {
         <nav>
           <ul>
             <li className={this.state.currPosition === 'home' 
-            ? 'curr-section' : undefined}><a href="#home">HOME</a></li>
+            ? this.animationStyle : undefined}><a href="#home">HOME</a></li>
             <li className={this.state.currPosition === 'about' 
-            ? 'curr-section' : undefined}><a href="#about">ABOUT</a></li>
+            ? this.animationStyle : undefined}><a href="#about">ABOUT</a></li>
             <li className={this.state.currPosition === 'portfolio' 
-            ? 'curr-section' : undefined}><a href="#portfolio">PORTFOLIO</a></li>
+            ? this.animationStyle : undefined}><a href="#portfolio">PORTFOLIO</a></li>
             <li className={this.state.currPosition === 'contact' 
-            ? 'curr-section' : undefined}><a href="#contact">CONTACT</a></li>
+            ? this.animationStyle : undefined}><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </header>

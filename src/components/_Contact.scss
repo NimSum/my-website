@@ -63,6 +63,15 @@ section.contact-section {
       margin: auto;
       height: 40px;
       border-radius: 20px;
+      background-color: transparent;
+      border: 3px solid #ffffff;
+      font-weight: bold;
+      transition: all ease-in-out 400ms;
+
+      &:hover {
+        color: $font-light;
+        border-color: $font-light;
+      }
     }
 
     input,

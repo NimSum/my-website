@@ -22,9 +22,12 @@ $bgc-light: hsla(200, 76%, 90%, .5);
 $nav-bgc: hsl(183, 49%, 63%);
 $hover-bgc-nav: hsl(180, 87%, 94%);
 
-.curr-section {
-  background-color: hsla(180, 87%, 94%, .5);
-  font-weight: bold;
+.slide-left {
+  box-shadow: inset -200px 0 0 0 $hover-bgc-nav;
+}
+
+.slide-right {
+  box-shadow: inset 200px 0 0 0 $hover-bgc-nav;
 }
 
 @mixin box-styling {
