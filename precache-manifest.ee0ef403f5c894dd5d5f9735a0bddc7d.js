@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2367583f725cdf23ec19",
-    "url": "/my-website/static/css/main.f304dc6d.chunk.css"
+    "revision": "b8cdc1dc355461156f4f",
+    "url": "/my-website/static/css/main.cf6d4a21.chunk.css"
   },
   {
-    "revision": "2367583f725cdf23ec19",
-    "url": "/my-website/static/js/main.f81aa440.chunk.js"
+    "revision": "b8cdc1dc355461156f4f",
+    "url": "/my-website/static/js/main.e0ee1983.chunk.js"
   },
   {
     "revision": "37063c54184f9fd8244e",
@@ -108,7 +108,7 @@ self.__precacheManifest = [
     "url": "/my-website/static/media/wheel-of-mortys.56e8a83f.jpg"
   },
   {
-    "revision": "f1390e8d6801a04a7fef625477e06717",
+    "revision": "bcb6c9ebd595216ad61e9d01e120574d",
     "url": "/my-website/index.html"
   }
 ];
