@@ -12,35 +12,31 @@ section.splash {
     display: flex;
     align-items: flex-end; 
     flex-wrap: wrap;
-    background-color: $bgc-light;
-    padding: 0;
+    background-color: $splash-bgc-light;
     border-radius: 30px;
+    padding: 10px;
     position: relative;
-    height: 30%;
+    min-height: 250px;
+    max-height: 300px;
 
     h1 {
       font-size: 15rem;
       margin: 0;
-      margin-left: 20px;
       font-weight: lighter;
       color: $secondary-dark;
     }
   
     div.splash-intro {
-      height: 50%;
-      margin: 65px 30px 0px 10px;
       min-width: 290px;
       color: $primary-dark;
-      p {
-        font-size: 2rem;
-      }
+      font-size: 2rem;
+      margin: 50px 10px;
     }
 
     .icon-container {
       position: absolute;
       top: 0;
       right: 0;
-      margin: 5px;
       opacity: .7;
 
       img {
@@ -50,39 +46,49 @@ section.splash {
     }
   }
 
-  .arrow-down-desc {
+  div.arrow-down-container {
     position: absolute;
-    bottom: 100px;
-    text-shadow: 1px 1px 4px $primary-dark;
     color: white;
-    z-index: 1;
-  }
-
-  .arrow-down {
-    box-sizing: border-box;
-    margin: auto;
-    height: 120px;
-    width: 120px;
-    border-style: solid;
-    border-color: white;
-    border-width: 6px;
-    transition: 350ms ease-in-out;
-    border-radius: 10px;
-    position: absolute;
     bottom: 50px;
-    z-index: 2;
-    cursor: pointer;
+    transition: 350ms linear;
+    text-shadow: 1px 1px 4px $primary-dark;
+    z-index: 1;
 
-    &:hover {
-      border-width: 0px 6px 6px 0px;
-      transform: scale(1.2) rotate(45deg);;
-      border-color: $primary-light;
+    span.arrow-down-desc {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      z-index: -1;
+    }
+  
+    .arrow-down {
+      box-sizing: border-box;
+      transition: 350ms ease-in-out;
+      margin: auto;
+      height: 120px;
+      width: 120px;
+      border-style: solid;
+      border-color: white;
+      border-width: 6px;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        border-width: 0px 6px 6px 0px;
+        transform: scale(1.2) rotate(45deg);
+      }
+  
+      a {
+        display: block;
+        height: 100%;
+        font-size: 0;
+      }
     }
 
-    a {
-      display: block;
-      height: 100%;
-      font-size: 0;
+    &:hover {
+      font-size: 1.1rem;
     }
   }
 

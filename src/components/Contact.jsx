@@ -113,7 +113,7 @@ export class Contact extends Component {
               type="text">
             </textarea>
             <input 
-              className="submit-btn"
+              className={`submit-btn ${this.state.enabled && 'email-btn'}`}
               type="submit"
               value="Send"
               disabled={!this.state.enabled}>

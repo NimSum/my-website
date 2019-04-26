@@ -32,73 +32,70 @@ section.contact-section {
 
   div.input-container {
     display: flex;
+    min-width: 500px;
     flex-direction: column;
     width: 35%;
     margin: auto;
     padding: 20px;
-    border: 2px solid $primary-dark;
+    border: 2px solid $font-light;
     border-radius: 20px;
 
     label {
       font-weight: bold;
+      color: $font-darker;
     }
 
     input {
-      height: 2rem;
-      padding: 0 5px;
-      font-size: 1rem;
+      height: 2.5rem;
       letter-spacing: .5px;
       margin-bottom: 20px;
     }
 
     textarea {
       height: 125px;
-      font-size: 1rem;
       margin-bottom: 25px;
-      padding: 5px;
     }
     
     input.submit-btn {
-      width: 30%;
+      width: 100px;
       margin: auto;
       height: 40px;
-      border-radius: 20px;
-      background-color: transparent;
-      border: 3px solid #ffffff;
+      border: 0;
       font-weight: bold;
-      transition: all ease-in-out 400ms;
-
-      &:hover {
-        color: $font-light;
-        border-color: $font-light;
-      }
+      font-size: 1.2rem;
+      transition: all ease-in-out 200ms;
     }
 
     input,
     textarea {
-      border: 2px solid $secondary-light;
-      border-radius: 5px;
+      border: 2px solid $font-light;
+      border-radius: 10px;
+      font-weight: 1rem;
+      padding: .2rem .5rem;
     }
   }
 
   footer {
     position: absolute;
-    height: 150px;
-    background-color: $primary-dark;
+    height: 100px;
+    background-color: $bgc-light;
     width: 100%;
     bottom: 0;
     text-align: center;
-    color: $primary-light;
+    color: $font-darker;
+    display: flex;
+    justify-content: center;
 
     p.copy-right {
       margin: 10px;
     }
 
     section.site-info {
-      margin: auto;
       display: flex;
       justify-content: center;
-
+      position: absolute;
+      top: 30px;
+      
       div, a {
         padding: 5px 10px;
         margin: 0 10px;
@@ -107,7 +104,6 @@ section.contact-section {
 
       img {
         width: 40px;
-
         &:last-child {
           border-radius: 30%;
         }
@@ -115,9 +111,7 @@ section.contact-section {
 
       a {
         display: block;
-        color: $primary-light;
         text-decoration: none;
-
       }
     }
   }

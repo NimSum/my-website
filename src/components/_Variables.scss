@@ -17,8 +17,10 @@ $font-dark: hsl(208, 40%, 35%);
 // #3f72af // 
 
 
+$bgc-light: hsl(186, 68%, 88%);
+$bgc-dark: hsl(185, 60%, 78%);
 
-$bgc-light: hsla(200, 76%, 90%, .5);
+$splash-bgc-light: hsla(200, 76%, 90%, .7);
 $nav-bgc: hsl(183, 49%, 63%);
 $hover-bgc-nav: hsl(180, 87%, 94%);
 
@@ -28,6 +30,18 @@ $hover-bgc-nav: hsl(180, 87%, 94%);
 
 .slide-right {
   box-shadow: inset 200px 0 0 0 $hover-bgc-nav;
+}
+
+.email-btn {
+  border: 3px solid white !important;
+  color: white ;
+  background-color: transparent ;
+  cursor: pointer;
+
+  &:hover {
+    color: $font-light ;
+    border-color: $font-light !important;
+  }
 }
 
 @mixin box-styling {
@@ -46,4 +60,30 @@ $hover-bgc-nav: hsl(180, 87%, 94%);
     opacity: 1;
     transform: scaleX(1);
   }
+}
+
+.next-btn {
+  position: absolute;
+  text-align: center;
+  bottom: 30px;
+  width: 100%;
+  z-index: 1;
+  transition: all ease-in-out 300ms;
+    
+  a {
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+
+    &:hover {
+      color: $font-light;
+      border-color: $font-light;
+    }
+  }
+  &:hover {
+    transform: scale(1.2);
+  } 
 }
