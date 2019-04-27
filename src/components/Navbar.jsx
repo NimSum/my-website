@@ -19,7 +19,7 @@ export class Navbar extends Component {
     };
   }
 
-  trackPosition = () => {
+  componentDidMount() {
     window.addEventListener("scroll", () => {
       let totalHeight = Math.ceil((window.pageYOffset/document.body.scrollHeight) * 100);
       this.animationDirection(totalHeight);
@@ -48,7 +48,6 @@ export class Navbar extends Component {
   }
 
   render() {
-    this.trackPosition();
     return (
       <header> 
         <nav>

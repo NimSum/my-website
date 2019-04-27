@@ -9,12 +9,11 @@ $secondary-light: hsl(191, 76%, 38%);
 $primary-dark: hsl(222, 50%, 29%);
 $secondary-dark: hsl(204, 64%, 33%);
 
-// #355c7d
+
 $font-lighter: hsl(0, 14%, 97%);
 $font-light: hsl(213, 47%, 47%);
 $font-darker: hsl(212, 64%, 19%);
 $font-dark: hsl(208, 40%, 35%);
-// #3f72af // 
 
 
 $bgc-light: hsl(186, 68%, 88%);
@@ -87,3 +86,5 @@ $hover-bgc-nav: hsl(180, 87%, 94%);
     transform: scale(1.2);
   } 
 }
+
+$media-query-phone: "only screen and (min-width: 320px) and (max-width: 480px)";

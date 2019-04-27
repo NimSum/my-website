@@ -4,11 +4,16 @@ section.portfolio-section {
   
   h2 {
     padding-top: 7vh;
+    font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
+    color: $font-dark;
   }
   
   div.projects-container {
+    background-color: $splash-bgc-light;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 20px hsla(183, 49%, 63%, .2);  
     overflow: scroll;
     height: 76vh;
     display: grid;
@@ -17,15 +22,10 @@ section.portfolio-section {
     padding: 1%;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     justify-items: center;
-
-    &::-webkit-scrollbar {
-      width: 0px;
-      background: transparent;  
-    }
-    &::-webkit-scrollbar-thumb {
-      background: #FF0000;
-    }
   }
 
+  @media #{$media-query-phone} {
+
+  }
 
 }

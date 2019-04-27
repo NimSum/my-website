@@ -31,10 +31,10 @@ export class About extends Component {
           </div>
         </article>
         <article className="soft-skills">
-          stuff
+          
         </article>
         <article className="technical-skills">
-          stuff
+          
         </article>
         <div className="next-btn">
             <a href="#portfolio">Portfolio</a>

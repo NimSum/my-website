@@ -14,6 +14,12 @@ section.contact-section {
 
       h3 {
         font-size: 2rem;
+        color: $font-dark;
+      }
+
+      p {
+        color: $font-light;
+        font-size: 1.2rem;
       }
     }
     
@@ -55,7 +61,7 @@ section.contact-section {
       height: 125px;
       margin-bottom: 25px;
     }
-    
+
     input.submit-btn {
       width: 100px;
       margin: auto;
@@ -63,7 +69,9 @@ section.contact-section {
       border: 0;
       font-weight: bold;
       font-size: 1.2rem;
+      background-color: transparent;
       transition: all ease-in-out 200ms;
+      border: 2px solid gray;
     }
 
     input,
@@ -72,6 +80,7 @@ section.contact-section {
       border-radius: 10px;
       font-weight: 1rem;
       padding: .2rem .5rem;
+      background-color: $font-lighter;
     }
   }
 
@@ -104,8 +113,10 @@ section.contact-section {
 
       img {
         width: 40px;
+
         &:last-child {
-          border-radius: 30%;
+          padding: 4px;
+          border-radius: 50%;
         }
       }
 

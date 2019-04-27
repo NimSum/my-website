@@ -79,7 +79,7 @@ export class Contact extends Component {
           </div>
           <div className="icon-container">
             <a href="https://github.com/NimSum" target="_blank" rel="noopener noreferrer" title="Github">
-                <img src={require('../images/github.svg')} alt="github" />
+                <img src={require('../images/github-blue.svg')} alt="github" />
               </a>
               <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                 <img src={require('../images/linked-in.svg')} alt="linked in" />
@@ -127,10 +127,10 @@ export class Contact extends Component {
               <p>This page was built with:</p>
               <img src={require('../images/react.svg')} alt="react" title="React"/>
               <img src={require('../images/sass.svg')} alt="sass" title="SASS"/>
-              <img src={require('../images/aws.png')} alt="sass" title="AWS"/>
+              <img src={require('../images/aws.svg')} alt="sass" title="AWS"/>
             </div>
             <a href="https://github.com/NimSum/my-website" title="Source" target="_blank" rel="noopener noreferrer"><p>Source</p>
-              <img src={require('../images/git-logo.png')} alt="sass" />
+              <img src={require('../images/source.svg')} alt="sass" />
             </a>
           </section>
         </footer>

@@ -23,14 +23,21 @@ section.splash {
       font-size: 15rem;
       margin: 0;
       font-weight: lighter;
-      color: $secondary-dark;
+      color: $font-light;
     }
   
     div.splash-intro {
       min-width: 290px;
-      color: $primary-dark;
-      font-size: 2rem;
+      color: $font-dark;
+      font-size: 2.2rem;
       margin: 50px 10px;
+      
+      span {
+        font-weight: bold;
+      }
+      p:first-child {
+        color: $font-darker;
+      }
     }
 
     .icon-container {
