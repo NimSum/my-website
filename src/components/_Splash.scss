@@ -11,13 +11,10 @@ section.splash {
   article {
     display: flex;
     align-items: flex-end; 
-    flex-wrap: wrap;
     background-color: $splash-bgc-light;
     border-radius: 30px;
-    padding: 10px;
+    padding: 10px 40px;
     position: relative;
-    min-height: 250px;
-    max-height: 300px;
 
     h1 {
       font-size: 15rem;
@@ -27,11 +24,10 @@ section.splash {
     }
   
     div.splash-intro {
-      min-width: 290px;
       color: $font-dark;
       font-size: 2.2rem;
       margin: 50px 10px;
-      
+
       span {
         font-weight: bold;
       }
@@ -107,5 +103,36 @@ section.splash {
     color: white;
     padding: 10px;
     text-shadow: 1px 1px gray;
+  }
+
+  @media only screen and (max-width: 900px)  {
+    article {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+    }
+
+    h1 {
+      height: 220px;
+      padding: 30px 0;
+    }
+    
+    div.splash-intro {
+      text-align: center;
+      min-width: 260px;
+    }
+  }
+}
+
+@media #{ $media-query-phone } {
+  div.splash-intro {
+    font-size: 1.8rem !important;
+    margin: 10px !important;
+  }
+
+  h1 {
+    padding: 0 !important;
+    font-size: 10rem !important;
+    height: 150px !important;
   }
 }

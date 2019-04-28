@@ -69,6 +69,12 @@ export class Contact extends Component {
     }
   }
   
+  directEmail = () => {
+    this.setState({validEmail: true}, () => {
+      this.email();
+    })
+  }
+
   render() {
     return (
       <section className="contact-section" id="contact">
@@ -84,8 +90,8 @@ export class Contact extends Component {
               <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                 <img src={require('../images/linked-in.svg')} alt="linked in" />
               </a>
-              <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer">
-                <img src={require('../images/mail.svg')} alt="mail" title="Direct email"/>
+              <a href={`mailto:${this.state.email}`} rel="noopener noreferrer">
+                <img onClick={this.directEmail} src={require('../images/mail.svg')} alt="mail" title="Direct email"/>
               </a>
           </div>
         </article>
@@ -127,7 +133,7 @@ export class Contact extends Component {
               <p>This page was built and deployed with:</p>
               <img src={require('../images/react.svg')} alt="react" title="React"/>
               <img src={require('../images/sass.svg')} alt="sass" title="SASS"/>
-              <img src={require('../images/aws.svg')} alt="sass" title="AWS"/>
+              <img src={require('../images/aws.svg')} alt="sass" title="AWS S3, Cloudfront, Route53"/>
             </div>
             <a href="https://github.com/NimSum/my-website" title="Source" target="_blank" rel="noopener noreferrer"><p>View Source</p>
               <img src={require('../images/source.svg')} alt="sass" />
@@ -138,5 +144,5 @@ export class Contact extends Component {
     )
   }
 }
-
+   
 export default Contact

@@ -7,7 +7,6 @@ section.contact-section {
     flex-direction: column;
     padding-top: 7vh;
     margin: auto;
-    width: 35%;
 
     div.contact-intro {
       text-align: center;
@@ -26,11 +25,10 @@ section.contact-section {
     div.icon-container {
       display: flex;
       justify-content: space-between;
-      width: 100%;
       margin: auto;
 
       a img {
-      width: 75px;
+      width: 50px;
       margin: 25px;
       }
     }
@@ -38,9 +36,9 @@ section.contact-section {
 
   div.input-container {
     display: flex;
-    min-width: 500px;
     flex-direction: column;
-    width: 35%;
+    min-width: 300px;
+    max-width: 500px;
     margin: auto;
     padding: 20px;
     border: 2px solid $font-light;
@@ -126,6 +124,23 @@ section.contact-section {
         display: block;
         text-decoration: none;
       }
+    }
+  }
+}
+
+@media #{ $media-query-phone } {
+  article {
+    padding-top: 9vh !important;
+  }
+  div.input-container {
+    min-width: 300px;
+    width: 90% !important;
+  }
+  section.site-info {
+    font-size: .7rem;
+
+    div {
+      margin: 0 !important;
     }
   }
 }
