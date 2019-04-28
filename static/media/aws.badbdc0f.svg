@@ -1,0 +1,12 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect fill="#3f72b0" fill-rule="nonzero" y="0" x="0" width="512" ry="64" rx="64" id="rect2987" height="512"/>
+  <path fill="#ffffff" id="AWS" d="m66.00017,143.11476l168.88876,54.77063l0,240.99156l-167.79097,-57.11395m209.42617,57.9035l169.47569,-57.9035l0,-237.07757l-168.91829,52.41884m-21.2461,-27.38531l155.0524,-50.44284l-155.0524,-46.94262l-158.61616,46.94262"/>
+ </g>
+</svg>
