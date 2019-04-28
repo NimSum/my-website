@@ -8,6 +8,13 @@ export class About extends Component {
   }
 
   render() {
+    const circleGenerator = amount => {
+      const result = [];
+      for (let i = 0; i < amount; i++ ) {
+        result.push(<span className="circle-level"></span>)
+      }
+      return result;
+    }
     return (
       <section className="about-section" id="about">
         <article className="my-story">
@@ -34,47 +41,59 @@ export class About extends Component {
           
         </article>
         <article className="my-skillset">
-          <section className="skill-levels">
-            <ul>
-              <li></li>
-              <li>Novice</li>
-              <li>Intermediate</li>
-              <li>Advanced</li>
-              <li>Expert</li>
-            </ul>
-          </section>
           <section className="languages">
             <ul className="skill-level-container">
-              <li>
-                <span className="lang-img-cont"><img src={require('../images/react.svg')} alt="React" title="React"/></span>
-                <span className="level react"></span>
+              <li className="level-title">
+                <span>Novice</span>
+                <span>Intermediate</span>
+                <span>Advanced</span>
+                <span>Expert</span>
               </li>
               <li>
-                <span className="lang-img-cont"><img src={require('../images/sass.svg')} alt="SASS" title="SASS"/><img src={require('../images/css.svg')} alt="CSS" title="CSS"/></span>
-                <span className="level sass-css"></span>
+                <span className="lang-img-cont"><img src={require('../images/react.svg')} alt="React" title="React"/>React</span>
+                <div className="level"><div className="circle-container react">
+                  {circleGenerator(20)}
+                  </div></div>
               </li>
               <li>
-                <span className="lang-img-cont"><img src={require('../images/html.svg')} alt="HTML" title="HTML"/></span>
-                <span className="level html"></span>
+                <span className="lang-img-cont"><img src={require('../images/sass.svg')} alt="SASS" title="SASS"/>SASS</span>
+                <div className="level"><div className="circle-container sass">
+                  {circleGenerator(25)}
+                  </div></div>
               </li>
               <li>
-                <span className="lang-img-cont"><img src={require('../images/js.svg')} alt="Javascript" title="Javscript"/></span>
-                <span className="level javascript"></span>
+                <span className="lang-img-cont"><img src={require('../images/css.svg')} alt="CSS" title="CSS"/>CSS</span>
+                <div className="level"><div className="circle-container css">
+                  {circleGenerator(30)}
+                  </div></div>
               </li>
               <li>
-                <span className="lang-img-cont"><img src={require('../images/redux.svg')} alt="Redux" title="Redux"/></span>
-                <span className="level redux"></span>
+                <span className="lang-img-cont"><img src={require('../images/html.svg')} alt="HTML" title="HTML"/>HTML5</span>
+                <div className="level"><div className="circle-container html">
+                  {circleGenerator(30)}
+                  </div></div>
               </li>
               <li>
-                <span className="lang-img-cont"><img src={require('../images/node.svg')} alt="Node JS" title="Node JS"/></span>
-                <span className="level node"></span>
+                <span className="lang-img-cont"><img src={require('../images/js.svg')} alt="Javascript" title="Javscript"/>Javascript</span>
+                <div className="level"><div className="circle-container javascript">
+                  {circleGenerator(30)}
+                  </div></div>
+              </li>
+              <li>
+                <span className="lang-img-cont"><img src={require('../images/redux.svg')} alt="Redux" title="Redux"/>Redux</span>
+                <div className="level"><div className="circle-container redux">
+                  {circleGenerator(10)}
+                  </div></div>
+              </li>
+              <li>
+                <span className="lang-img-cont"><img src={require('../images/node.svg')} alt="Node JS" title="Node JS"/>Node.js</span>
+                <div className="level"><div className="circle-container node">
+                  {circleGenerator(10)}
+                  </div></div>
               </li>
             </ul>
           </section>
         </article>
-        <div className="next-btn">
-            <a href="#portfolio">Portfolio</a>
-        </div>
       </section>
     )
   }

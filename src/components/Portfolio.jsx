@@ -17,9 +17,6 @@ export class Portfolio extends Component {
             />)
           }
         </div>
-        <div className="next-btn">
-            <a href="#contact">Contact</a>
-        </div>
       </section>
     )
   }
