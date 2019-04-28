@@ -68,11 +68,78 @@ section.about-section {
   
   article.soft-skills {
     grid-area: soft-skills;
-
   }
 
-  article.technical-skills {
+  article.my-skillset {
     grid-area: technical-skills;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+
+    section.skill-levels {
+      height: 16.6%;
+      ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        text-align: right;
+
+          li {
+          padding: 1% 2%;
+          word-break: break-all;
+          height: 100%;
+          display: block;
+          width: 20%;
+        }
+      }
+    }
+
+    section.languages {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+
+      ul.skill-level-container {
+        list-style-type: none;
+        height: 100%;
+        li {
+          height: 16.6%;
+          display: flex;
+    
+          span {
+            display: block;
+          }
+          span.lang-img-cont {
+            height: 100%;
+            text-align: center;
+            width: 20%;
+            border: 1px solid black;
+            img {
+              width: 25%;
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+
+          span.level {
+            height: 50%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid green;
+          }
+          
+          span.react { width: 50% }
+          span.sass-css { width: 70% }
+          span.html { width: 70% }
+          span.javascript { width: 70% }
+          span.redux { width: 30% }
+          span.node { width: 20% }
+        }
+      }
+    }
   }
 
   article.soft-skills,

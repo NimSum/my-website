@@ -71,7 +71,8 @@ section.contact-section {
       font-size: 1.2rem;
       background-color: transparent;
       transition: all ease-in-out 200ms;
-      border: 2px solid gray;
+      border: 2px solid #80b1b6;
+      color: #80b1b6;
     }
 
     input,
@@ -81,6 +82,7 @@ section.contact-section {
       font-weight: 1rem;
       padding: .2rem .5rem;
       background-color: $font-lighter;
+      color: $font-dark;
     }
   }
 

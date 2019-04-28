@@ -33,8 +33,44 @@ export class About extends Component {
         <article className="soft-skills">
           
         </article>
-        <article className="technical-skills">
-          
+        <article className="my-skillset">
+          <section className="skill-levels">
+            <ul>
+              <li></li>
+              <li>Novice</li>
+              <li>Intermediate</li>
+              <li>Advanced</li>
+              <li>Expert</li>
+            </ul>
+          </section>
+          <section className="languages">
+            <ul className="skill-level-container">
+              <li>
+                <span className="lang-img-cont"><img src={require('../images/react.svg')} alt="React" title="React"/></span>
+                <span className="level react"></span>
+              </li>
+              <li>
+                <span className="lang-img-cont"><img src={require('../images/sass.svg')} alt="SASS" title="SASS"/><img src={require('../images/css.svg')} alt="CSS" title="CSS"/></span>
+                <span className="level sass-css"></span>
+              </li>
+              <li>
+                <span className="lang-img-cont"><img src={require('../images/html.svg')} alt="HTML" title="HTML"/></span>
+                <span className="level html"></span>
+              </li>
+              <li>
+                <span className="lang-img-cont"><img src={require('../images/js.svg')} alt="Javascript" title="Javscript"/></span>
+                <span className="level javascript"></span>
+              </li>
+              <li>
+                <span className="lang-img-cont"><img src={require('../images/redux.svg')} alt="Redux" title="Redux"/></span>
+                <span className="level redux"></span>
+              </li>
+              <li>
+                <span className="lang-img-cont"><img src={require('../images/node.svg')} alt="Node JS" title="Node JS"/></span>
+                <span className="level node"></span>
+              </li>
+            </ul>
+          </section>
         </article>
         <div className="next-btn">
             <a href="#portfolio">Portfolio</a>
