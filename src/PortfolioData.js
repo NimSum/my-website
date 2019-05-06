@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     "title": "git Commander",
     "description": "An interactive game that trains developers git commands ",
@@ -71,4 +71,59 @@ const projects = [
   }
 ]
 
-export default projects;
+export const softSkills = [
+  { 
+    title: 'Test Driven Development',
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
+  },
+  { 
+   title: 'Test Driven Development',
+   body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
+  },
+  { 
+    title: 'Test Driven Development',
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
+  },
+  { 
+    title: 'Test Driven Development',
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
+  }
+ ];
+
+ export const skillLevels = [
+  { 
+    name: 'React',
+    imgName: 'react.svg',
+    className: 'react'
+  },
+  { 
+    name: 'SASS',
+    imgName: 'sass.svg',
+    className: 'sass'
+  },
+  { 
+    name: 'CSS',
+    imgName: 'css.svg',
+    className: 'css'
+  },
+  { 
+    name: 'HTML5',
+    imgName: 'html.svg',
+    className: 'html'
+  },
+  { 
+    name: 'Javascript',
+    imgName: 'js.svg',
+    className: 'javascript'
+  },
+  { 
+    name: 'Redux',
+    imgName: 'redux.svg',
+    className: 'redux'
+  },
+  { 
+    name: 'Node.js',
+    imgName: 'node.svg',
+    className: 'node'
+  }
+];

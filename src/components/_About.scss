@@ -3,6 +3,7 @@ section.about-section {
   background-size: cover;
   padding: 5% 0;
   display: grid;
+  align-content: center;
   grid-template-columns: 1fr 1.5fr;
   grid-template-areas: 
     "story soft-skills" 
