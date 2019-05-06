@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 $primary-font: 'Nunito', sans-serif;
+
+
+// BLUE
+$primary-light: hsl(200, 76%, 90%);
+$secondary-light: hsl(191, 76%, 38%);
+$primary-dark: hsl(222, 50%, 29%);
+$secondary-dark: hsl(204, 64%, 33%);
+
+
 $font-lighter: hsl(0, 14%, 97%);
 $font-light: hsl(213, 47%, 47%);
 $font-darker: hsl(212, 64%, 19%);
 $font-dark: hsl(208, 40%, 35%);
+
+
 $bgc-light: hsl(186, 68%, 88%);
 $bgc-dark: hsl(185, 60%, 78%);
+
 $splash-bgc-light: hsla(200, 76%, 90%, .7);
 $nav-bgc: hsl(183, 49%, 63%);
 $hover-bgc-nav: hsl(180, 87%, 94%);

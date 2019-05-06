@@ -1,9 +1,9 @@
 section.about-section {
   background: url('./images/bg-cont-1.svg');
   background-size: cover;
-  padding: 5%;
+  padding: 5% 0;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   grid-template-areas: 
     "story soft-skills" 
     "story technical-skills";
@@ -14,6 +14,8 @@ section.about-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 500px;
+    margin: auto;
 
 
     div.my-story-container {
@@ -73,74 +75,8 @@ section.about-section {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-
-    section.languages {
-      display: flex;
-      background-color: $splash-bgc-light;
-      border-radius: 10px;
-      padding: 10px;
-      flex-direction: column;
-      
-      ul.skill-level-container {
-        list-style-type: none;
-
-        li.level-title {
-          padding: 0 5% 1% 20%;
-          justify-content: space-between;
-        }
-        
-        li {
-          display: flex;
-
-          span.lang-img-cont {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            width: 18%;
-            text-align: right;
-            border-right: 1px solid $font-lighter;
-            font-size: .8rem;
-            font-weight: bold;
-            color: $font-darker;
-          
-
-            img {
-              width: 40%;
-              margin: auto;
-              margin-right: 10px;
-            }
-          }
-
-          div.level {
-            width: 80%;
-            display: flex;
-            align-items: center;
-
-            div.circle-container {
-              white-space: nowrap;
-              overflow: hidden;
-              
-              span.circle-level {
-                width: 15px;
-                height: 15px;
-                margin: 10px;
-                display: inline-block;
-                border-radius: 50%;
-                background-color: $font-lighter;
-              }
-            }
-          }
-
-          .react { width: 50%; }
-          .sass { width: 75%; }
-          .css { width: 80%; }
-          .html { width: 80%; }
-          .javascript { width: 80%; }
-          .redux { width: 30%; }
-          .node { width: 20%; }
-        }
-      }
-    }
+    width: 90%;
+    max-width: 650px;
   }
 
   article.soft-skills,
@@ -152,8 +88,7 @@ section.about-section {
 
 @media #{ $media-query-phone } {
   article {
-    width: 90%;
-
+    width: 100%;
 
     div.my-story-container {
       min-width: 320px;
@@ -161,19 +96,14 @@ section.about-section {
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1150px) {
   section.about-section {
     display: flex;
     flex-direction: column;
     overflow: scroll;
 
     article {
-      width: 70%;
       margin: auto;
-    }
-
-    article.my-skillset {
-      min-width: 575px;
     }
   }
 }
