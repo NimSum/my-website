@@ -81,7 +81,7 @@ export class Contact extends Component {
         <article>
           <div className="contact-intro">
             <h3>Let's get in touch!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, facere!</p>
+            <p>I am currently searching for an entry level Front End Developer position. If you are interested, please send me a message! I will get back with you as soon as I can! </p>
           </div>
           <div className="icon-container">
             <a href="https://github.com/NimSum" target="_blank" rel="noopener noreferrer" title="Github">

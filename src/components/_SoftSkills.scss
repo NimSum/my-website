@@ -1,0 +1,11 @@
+section.soft-skills-box {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-gap: 4%;
+  width: 80%;
+  margin: 20px 0;
+
+  article {
+    margin: 10px;
+  }
+}

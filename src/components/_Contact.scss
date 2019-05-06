@@ -1,24 +1,29 @@
 section.contact-section {
   background: url('./images/bg-cont-1.svg');
   background-size: cover;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
   article {
     display: flex;
     flex-direction: column;
-    padding-top: 7vh;
-    margin: auto;
+    margin: 0 auto;
 
     div.contact-intro {
-      text-align: center;
-
       h3 {
         font-size: 2rem;
+        text-align: center;
         color: $font-dark;
       }
 
       p {
         color: $font-light;
         font-size: 1.2rem;
+        min-width: 300px;
+        padding: 5px 20px;
+        max-width: 500px;
+        text-indent: 40px;
       }
     }
     
@@ -129,13 +134,24 @@ section.contact-section {
 }
 
 @media #{ $media-query-phone } {
-  article {
-    padding-top: 9vh !important;
+  section.contact-section {
+    justify-content: flex-start;
   }
+
+  article {
+    padding-top: 50px;
+    
+    div.icon-container a img {
+      margin: 10px !important;
+    }
+  }
+
   div.input-container {
     min-width: 300px;
+    height: 350px;
     width: 90% !important;
   }
+
   section.site-info {
     font-size: .7rem;
 
