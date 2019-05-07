@@ -11,6 +11,17 @@ export const projects = [
     "id": "1"
   },
   {
+    "title": "Star Wars api box",
+    "description": "A page that uses the swapi api to generate cards about Star Wars characters/vehicles/planets",
+    "team" : "Solo Project",
+    "toolsUsed": ["React", "SASS", "Jest & Enzyme", "PropTypes"],
+    "concepts": ["Async JS", "Organized Workflow", "TDD", "Async JS Testing"],
+    "src": "https://github.com/NimSum/swapi-box",
+    "staticSite": "https://nimsum.github.io/swapi-box/",
+    "imgURL": "swapi-box.jpg",
+    "id": "7"
+  },
+  {
     "title": "Marvelously",
     "description": "A page that showcases comics and movies, it has a powerful search and sorting functionality",
     "team" : [
