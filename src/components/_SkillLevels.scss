@@ -1,28 +1,20 @@
-section.languages {
+section.languages-skills {
   display: flex;
   background-color: $splash-bgc-light;
   border-radius: 10px;
   padding: 10px;
-  flex-direction: column;
   
-  ul.skill-level-container {
-    list-style-type: none;
-
-    li {
-      display: flex;
-
+  div.skills-container {
+    width: 18%;
       span.lang-img-cont {
-        height: 100%;
         display: flex;
         align-items: center;
-        width: 18%;
         text-align: right;
         border-right: 1px solid $font-lighter;
         font-size: .8rem;
         font-weight: bold;
         color: $font-darker;
-      
-
+        
         img {
           width: 40%;
           margin: auto;
@@ -30,38 +22,9 @@ section.languages {
         }
       }
 
-      div.level {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        position: relative;
-
-      div.bar-level {
-        height: 30%;
-        background-color: hsla(0, 0%, 0%, 0.1);
-        position: absolute;
-        width: 100%;
-      }
-
-      div.fill {
-        height: 30%;
-        background-color: #fff;
-        z-index: 1;
-      }
-
-      .react { width: 65%; }
-      .sass { width: 85%; }
-      .css { width: 90%; }
-      .html { width: 90%; }
-      .javascript { width: 85%; }
-      .redux { width: 30%; }
-      .node { width: 10%; }
-      }
-
       div {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
       }
-    }
   }
 }

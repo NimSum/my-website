@@ -2,10 +2,9 @@ import React from 'react';
 import { skillLevels } from '../PortfolioData';
 
 export const SkillLevels = () => (
-  <section className="languages">
-    <ul className="skill-level-container">
+  <section className="languages-skills">
+    <div className="skills-container">
       { skillLevels.map(skill => (
-        <li>
           <span className="lang-img-cont">
             { skill.name }
             <img 
@@ -13,12 +12,10 @@ export const SkillLevels = () => (
               alt={ skill.name } 
               title={ skill.name }/>
           </span>
-          <div className="level">
-            <div className={`${ skill.className } fill`}></div>
-            <div className="bar-level"></div>
-          </div>
-        </li>
       ))}
-    </ul>
+    </div>
+    <div className="soft-skills">
+        <h2>asdfasdf</h2>
+    </div>
   </section>
 )

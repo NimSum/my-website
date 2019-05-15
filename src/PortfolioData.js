@@ -113,36 +113,29 @@ export const softSkills = [
   { 
     name: 'React',
     imgName: 'react.svg',
-    className: 'react'
   },
   { 
     name: 'SASS',
     imgName: 'sass.svg',
-    className: 'sass'
   },
   { 
     name: 'CSS',
     imgName: 'css.svg',
-    className: 'css'
   },
   { 
     name: 'HTML5',
     imgName: 'html.svg',
-    className: 'html'
   },
   { 
     name: 'Javascript',
     imgName: 'js.svg',
-    className: 'javascript'
   },
   { 
     name: 'Redux',
     imgName: 'redux.svg',
-    className: 'redux'
   },
   { 
     name: 'Node.js',
     imgName: 'node.svg',
-    className: 'node'
   }
 ];
