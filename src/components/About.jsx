@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { SkillLevels } from './SkillLevels';
-import { SoftSkills } from './SoftSkills';
+import { Skills } from './Skills';
 
 export class About extends Component {
   constructor() {
@@ -32,11 +31,8 @@ export class About extends Component {
           </section>
           </div>
         </article>
-        <article className="soft-skills">
-          < SoftSkills />
-        </article>
         <article className="my-skillset">
-          < SkillLevels />
+          < Skills />
         </article>
       </section>
     )

@@ -1,11 +1,29 @@
 section.soft-skills-box {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-  grid-gap: 4%;
-  width: 80%;
-  margin: 20px 0;
+  grid-gap: 2%;
+  width: 100%;
+  margin: 20px;
 
   article {
     margin: 10px;
+  }
+}
+
+@media #{ $media-query-phone } {
+  section.soft-skills-box {
+    display: flex;
+    flex-direction: column;
+
+    article {
+      padding: 10px;
+    }
+  }
+}
+
+@media #{ $media-query-tablets } {
+  section.soft-skills-box {
+    display: flex;
+    flex-direction: column;
   }
 }

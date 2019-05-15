@@ -4,10 +4,11 @@ section.about-section {
   padding: 5% 0;
   display: grid;
   align-content: center;
-  grid-template-columns: 1fr 1.5fr;
+  justify-items: center;
+  grid-template-columns: 1.5fr 3fr;
   grid-template-areas: 
-    "story soft-skills" 
-    "story technical-skills";
+    "story skills" 
+    "story skills";
 
   article.my-story {
     border: none;
@@ -17,7 +18,6 @@ section.about-section {
     flex-direction: column;
     max-width: 500px;
     margin: auto;
-
 
     div.my-story-container {
       background-color: $splash-bgc-light;
@@ -65,44 +65,36 @@ section.about-section {
       border: none;
     }
   }
-  
-  article.soft-skills {
-    grid-area: soft-skills;
-    
-  }
 
   article.my-skillset {
-    grid-area: technical-skills;
+    grid-area: skills;
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
     width: 90%;
-    max-width: 650px;
-  }
-
-  article.soft-skills,
-  article.technical-skills {
     @include box-styling;
-    margin-left: 5px;
+    margin: auto;
   }
 }
 
 @media #{ $media-query-phone } {
-  article {
+  article.my-skillset,
+  article.my-story {
     width: 100%;
-
     div.my-story-container {
       min-width: 320px;
     }
   }
 }
 
+
 @media only screen and (max-width: 1150px) {
   section.about-section {
     display: flex;
     flex-direction: column;
     overflow: scroll;
-
+    align-items: center;
+    
     article {
       margin: auto;
     }

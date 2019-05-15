@@ -88,15 +88,15 @@ export const softSkills = [
     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
   },
   { 
-   title: 'Test Driven Development',
+   title: 'Object Oriented Programming',
    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
   },
   { 
-    title: 'Test Driven Development',
+    title: 'Accessibility',
     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
   },
   { 
-    title: 'Test Driven Development',
+    title: 'Responsive Applications',
     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
   },
   { 
