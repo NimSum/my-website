@@ -15,7 +15,8 @@ header {
       align-content: center;
       list-style-type: none;
       border-radius: 20px;
-      
+      position: relative;
+
       li {
         font-size: 1.1rem;
         transition: box-shadow ease-in-out 600ms, background-color ease-in-out 300ms; 
