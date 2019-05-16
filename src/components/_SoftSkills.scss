@@ -3,10 +3,20 @@ section.soft-skills-box {
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
   grid-gap: 2%;
   width: 100%;
+  height: 100%;
   margin: 20px;
 
   article {
     margin: 10px;
+
+    h3 {
+      color: $font-darker;
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: $font-dark;
+    }
   }
 }
 

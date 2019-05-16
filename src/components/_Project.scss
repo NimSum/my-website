@@ -3,7 +3,6 @@ article.project-box {
   margin: 20px;
   min-width: 390px; 
   max-width: 550px;
-  height: 325px;
 
   a {
     text-decoration: none;
@@ -74,11 +73,6 @@ article.project-box {
 
       }
 
-      p:nth-child(2) {
-        // border: 2px solid black;
-        // border-width: 0px 2px;
-      }
-
       a {
         color: $font-lighter;
       }
@@ -97,7 +91,7 @@ article.project-box {
 
   }
 
-  div.icon-container {
+  div.project-icon-container {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 12%;
@@ -124,4 +118,23 @@ article.project-box {
       width: 100%;
     }
   }
+}
+
+@media #{$media-query-phone} {
+  article.project-box {
+    min-width: 320px;
+    height: auto;
+    padding: 0;
+
+    div.project-icon-container {
+      a {
+        font-size: .6rem;
+      }
+      a img {
+        margin: 0;
+      }
+    }
+  }
+
+
 }

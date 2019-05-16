@@ -6,16 +6,18 @@ section.skillset-container {
   position: relative;
   
   h3.skill-box-title {
+    font-size: 1.4rem;
     color: $font-darker;
     position: absolute;
     margin: 15px;
     text-align: center;
     width: 100%;
     top: 0;
+    left: 0;
   }
 
   div.skills-container {
-    width: 20%;
+    width: 24%;
     min-width: 115px;
     border-right: 2px solid $font-lighter;
     display: flex;
@@ -26,7 +28,7 @@ section.skillset-container {
         display: flex;
         align-items: center;
         text-align: right;
-        font-size: .8rem;
+        font-size: .9rem;
         font-weight: bold;
         color: $font-darker;
 
@@ -57,7 +59,7 @@ section.skillset-container {
 
       span.lang-img-cont {
         flex: 1;
-        font-size: .9rem;
+        font-size: 1rem;
         min-width: 70px;
         margin: 5px;
         justify-content: center;

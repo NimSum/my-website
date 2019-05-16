@@ -137,20 +137,41 @@ section.contact-section {
 @media #{ $media-query-phone } {
   section.contact-section {
     justify-content: flex-start;
+    max-height: 100vh;
   }
 
   article {
     padding-top: 50px;
     
     div.icon-container a img {
-      margin: 10px !important;
+      margin: 0 10px !important;
+      width: 35px !important;
+    }
+
+    div.contact-intro {
+      h3 {
+        font-size: 1.5rem !important; 
+      }
+
+      p {
+        font-size: 1rem !important;
+      }
     }
   }
 
   div.input-container {
     min-width: 300px;
-    height: 350px;
+    height: 300px;
     width: 90% !important;
+
+    input {
+      width: 100%;
+      margin: 0 auto !important;
+    }
+
+    textarea {
+      margin: 0 0 10px 0 !important;
+    }
   }
 
   section.site-info {
