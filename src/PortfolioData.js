@@ -15,9 +15,9 @@ export const projects = [
     "description": "A page that shows the most recent movies showing in theaters. Features a login/signup functionality for users to save their favorites",
     "team" : [ { "Kelly Zick" : "https://github.com/misskelly" } ],
     "toolsUsed": ["React", "Redux", "React-router", "SASS", "Jest & Enzyme", "PropTypes"],
-    "concepts": ["Async JS", "Organized Workflow", "TDD", "Async JS Testing"],
-    "src": "https://github.com/NimSum/swapi-box",
-    "staticSite": "https://nimsum.github.io/swapi-box/",
+    "concepts": ["Async JS", "Organized Workflow", "TDD", "Async JS Testing", 'Wireframing'],
+    "src": "https://github.com/NimSum/movie-tracker",
+    "staticSite": "https://nimsum.github.io/movie-tracker/",
     "imgURL": "movie-tracker.jpg",
     "id": "2"
   },
@@ -95,28 +95,28 @@ export const projects = [
 
 export const softSkills = [
   { 
+    title: 'Accessible & Responsive Applications',
+    body: 'Emphasizes the implementation of accessibility and cross-browser/device compatability'
+  },
+  { 
+    title: 'Problem Solver',
+    body: 'Creative problem solver, enjoys undertaking challenging problems and learning new concepts'
+  },
+  { 
+    title: 'Git & Github Workflow',
+    body: 'Proficient at using git & github tools to organize and maintain project workflow'
+  },
+  { 
+   title: 'Communication',
+   body: 'Excelent communicator, values empathetic work environments'
+  },
+  { 
     title: 'Test Driven Development',
-    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
+    body: 'Skilled at using testing frameworks & libraries such as Jest & Enzyme / Mocha & Chai'
   },
   { 
    title: 'Object Oriented Programming',
-   body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
-  },
-  { 
-    title: 'Accessibility',
-    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
-  },
-  { 
-    title: 'Responsive Applications',
-    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
-  },
-  { 
-    title: 'Git & Github Version Control',
-    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
-  },
-  { 
-   title: 'Group & Pair Programming',
-   body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
+   body: 'Understands the benefits and concepts of OOP'
   }
  ];
 
