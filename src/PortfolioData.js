@@ -11,6 +11,17 @@ export const projects = [
     "id": "1"
   },
   {
+    "title": "Movie Tracker",
+    "description": "A page that shows the most recent movies showing in theaters. Features a login/signup functionality for users to save their favorites",
+    "team" : [ { "Kelly Zick" : "https://github.com/misskelly" } ],
+    "toolsUsed": ["React", "Redux", "React-router", "SASS", "Jest & Enzyme", "PropTypes"],
+    "concepts": ["Async JS", "Organized Workflow", "TDD", "Async JS Testing"],
+    "src": "https://github.com/NimSum/swapi-box",
+    "staticSite": "https://nimsum.github.io/swapi-box/",
+    "imgURL": "movie-tracker.jpg",
+    "id": "2"
+  },
+  {
     "title": "Star Wars api box",
     "description": "A page that uses the swapi api to generate cards about Star Wars characters/vehicles/planets",
     "team" : "Solo Project",
@@ -19,7 +30,7 @@ export const projects = [
     "src": "https://github.com/NimSum/swapi-box",
     "staticSite": "https://nimsum.github.io/swapi-box/",
     "imgURL": "swapi-box.jpg",
-    "id": "7"
+    "id": "3"
   },
   {
     "title": "Marvelously",
@@ -34,7 +45,7 @@ export const projects = [
     "src": "https://github.com/MaxBSilver/marvel-whateverly",
     "staticSite": "https://maxbsilver.github.io/marvel-whateverly/",
     "imgURL": "marvelously.jpg",
-    "id": "2"
+    "id": "4"
   },
   {
     "title": "Wheel of Mortys",
@@ -45,7 +56,7 @@ export const projects = [
     "src": "https://github.com/NimSum/wheel-of-mortys",
     "staticSite": "https://nimsum.github.io/wheel-of-mortys/",
     "imgURL": "wheel-of-mortys.jpg",
-    "id": "3"
+    "id": "5"
   },
   {
     "title": "Connect Four",
@@ -67,7 +78,7 @@ export const projects = [
     "src": "https://github.com/NimSum/ng-comp-challenge-2",
     "staticSite": "https://nimsum.github.io/ng-comp-challenge-2/",
     "imgURL": "static-comp.jpg",
-    "id": "4"
+    "id": "7"
   },
   {
     "title": "Foto Finder",
@@ -78,7 +89,7 @@ export const projects = [
     "src": "https://github.com/NimSum/foto-finder",
     "staticSite": "https://nimsum.github.io/foto-finder/",
     "imgURL": "foto-finder.jpg",
-    "id": "5"
+    "id": "8"
   }
 ]
 
@@ -100,11 +111,11 @@ export const softSkills = [
     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
   },
   { 
-    title: 'Test Driven Development',
+    title: 'Git & Github Version Control',
     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
   },
   { 
-   title: 'Test Driven Development',
+   title: 'Group & Pair Programming',
    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum at'
   }
  ];
