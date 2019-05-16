@@ -60,6 +60,13 @@ export class Navbar extends Component {
             ? this.animationStyle : undefined}><a href="#portfolio">PORTFOLIO</a></li>
             <li className={this.state.currPosition === 'contact' 
             ? this.animationStyle : undefined}><a href="#contact">CONTACT</a></li>
+            <li className="resume-download">
+              <a
+                href={require('../Resume.pdf')}
+                download>
+                Download My Resume
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
