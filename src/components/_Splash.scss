@@ -38,7 +38,7 @@ section.splash {
 
     .icon-container {
       position: absolute;
-      top: 0;
+      top: 5px;
       right: 0;
       opacity: .7;
 
@@ -125,6 +125,7 @@ section.splash {
 }
 
 @media #{ $media-query-phone } {
+
   div.splash-intro {
     font-size: 1.8rem !important;
     margin: 10px !important;

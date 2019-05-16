@@ -25,7 +25,9 @@ section.portfolio-section {
   }
 
   @media #{$media-query-phone} {
-
+    div.projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
   }
 
 }

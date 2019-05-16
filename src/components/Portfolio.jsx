@@ -8,12 +8,12 @@ export class Portfolio extends Component {
       <section 
         className="portfolio-section" 
         id="portfolio">
-        <h2>My Work:</h2>
+        <h2>My Projects:</h2>
         <div className="projects-container">
           { projects.map(project => 
             < Project 
-              key={project.id}
-              {...project} 
+              key={ project.id }
+              { ...project } 
             />)
           }
         </div>

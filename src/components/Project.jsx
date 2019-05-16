@@ -49,7 +49,7 @@ export class Project extends Component {
               </div>
             </section>)
         }
-        <div className="icon-container">
+        <div className="project-icon-container">
             <a 
               href={ this.props.staticSite } 
               target="_blank" 
