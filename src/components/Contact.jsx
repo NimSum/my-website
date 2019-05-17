@@ -32,7 +32,8 @@ export class Contact extends Component {
     }
     this.state.validEmail 
       ? this.setState( {email: link} )
-      : this.setState( {email: ' ', enabled: false} );
+      : this.setState( {email: '', enabled: false} );
+    this.validateInput();
   }
 
   inputHandler = e => {
@@ -62,8 +63,8 @@ export class Contact extends Component {
         this.email();
       })
     }
-    if(this.state.senderName.length > 1 
-      && this.state.senderMessage.length > 1 
+    if(this.state.senderName.length  
+      && this.state.senderMessage.length
       && this.state.validEmail) {
         this.setState({enabled: true})
     }

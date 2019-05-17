@@ -2,7 +2,7 @@ section.contact-section {
   background: url('./images/bg-cont-1.svg');
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   
   article {
@@ -112,7 +112,7 @@ section.contact-section {
   }
 
   footer {
-    position: absolute;
+    position: relative;
     height: 100px;
     background-color: $bgc-light;
     width: 100%;
@@ -158,15 +158,17 @@ section.contact-section {
 
 @media #{ $media-query-phone } {
   section.contact-section {
-    justify-content: flex-start;
+    justify-content: flex-end;
     max-height: 100vh;
   }
 
   article {
-    padding-top: 50px;
-    
+    div.icon-container {
+      align-items: center;
+    }
+
     div.icon-container a img {
-      margin: 0 10px !important;
+      margin: 10px !important;
       width: 35px !important;
     }
 
@@ -187,6 +189,7 @@ section.contact-section {
 
   div.input-container {
     min-width: 300px;
+    margin: 10px auto !important;
     height: 300px;
     width: 90% !important;
 
