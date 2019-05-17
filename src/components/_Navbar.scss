@@ -40,15 +40,15 @@ header {
 
       li.resume-download {
         position: absolute;
-        margin: 0;
+        margin: 0 5px;
+        font-size: .9rem;
         right: 0;
         width: 110px;
-        margin: 5px;
         text-align: center;
 
         a {
           padding: 2px;
-          line-height: 25px;
+          line-height: 20px;
           word-wrap: wrap;
           text-decoration: underline;
         }
