@@ -141,4 +141,21 @@ section.splash {
     font-size: 10rem !important;
     height: 150px !important;
   }
+
+  span.arrow-down-desc {
+    font-size: .9rem;
+  }
+
+  div.arrow-down {
+    height: 100px !important;
+    width: 100px !important;
+    &:hover {
+      transform: scale(1) rotate(45deg);      
+    }
+  }
+
+  .photo-credit {
+    font-size: .6rem !important;
+  }
+
 }
