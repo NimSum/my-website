@@ -13,7 +13,7 @@ export class Splash extends Component {
             <p>I'm <span>Nimrod Garcia,</span> </p>  
             <p>a <span>Front-end Software Engineer</span></p>
           </div>
-          <div className="icon-container">
+          <div className="splash-icon-container">
             <a href="https://github.com/NimSum" target="_blank" rel="noopener noreferrer">
               <img src={require('../images/github-blue.svg')} alt="github" />
             </a>

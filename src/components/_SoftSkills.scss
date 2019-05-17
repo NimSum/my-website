@@ -23,6 +23,7 @@ section.soft-skills-box {
 
 @media #{ $media-query-phone } {
   section.soft-skills-box {
+    margin: 0;
     display: flex;
     flex-direction: column;
 

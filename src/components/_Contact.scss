@@ -36,6 +36,28 @@ section.contact-section {
       width: 50px;
       margin: 25px;
       }
+
+      a.mobile-resume-download {
+        display: none;
+        position: sticky;
+        font-size: .7rem;
+        bottom: 0;
+        width: 85px;
+        text-align: center;
+        padding: 7px;
+        height: 35px;
+        border-radius: 10px;
+        z-index: 10;
+        color: $font-lighter;
+        text-decoration: none;
+        background-color: $font-light;
+      
+        &:hover {
+          background-color: $hover-bgc-nav;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
     }
   }
 
@@ -146,6 +168,10 @@ section.contact-section {
     div.icon-container a img {
       margin: 0 10px !important;
       width: 35px !important;
+    }
+
+    a.mobile-resume-download {
+      display: block !important;
     }
 
     div.contact-intro {

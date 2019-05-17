@@ -40,9 +40,16 @@ header {
 
       li.resume-download {
         position: absolute;
+        margin: 0;
         right: 0;
-        margin: 0 10px;
+        width: 110px;
+        margin: 5px;
+        text-align: center;
+
         a {
+          padding: 2px;
+          line-height: 25px;
+          word-wrap: wrap;
           text-decoration: underline;
         }
       }
@@ -57,8 +64,23 @@ header {
     justify-content: space-around !important;
   }
 
-  ul {
+  li.resume-download {
+    display: none;
+  }
+}
+
+@media #{ $media-query-tablets } {
+  ul li a {
+    padding: 0 10px !important;
+    justify-content: space-around !important;
+  }
+
+  nav ul {
     justify-content: flex-start !important;
+  }
+
+  li.resume-download {
+    font-size: .8rem;
   }
 }
 
