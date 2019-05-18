@@ -67,7 +67,7 @@ export class Contact extends Component {
       && this.state.senderMessage.length
       && this.state.validEmail) {
         this.setState({enabled: true})
-    }
+    } else this.setState({enabled: false})
   }
   
   directEmail = () => {

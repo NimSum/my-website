@@ -99,6 +99,10 @@ section.contact-section {
       transition: all ease-in-out 200ms;
       border: 2px solid #80b1b6;
       color: #80b1b6;
+
+      &:hover {
+        color: $font-light !important;
+      }
     }
 
     input,
