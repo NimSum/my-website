@@ -42,8 +42,8 @@ export const projects = [
     ],
     "toolsUsed": ["React", "SASS", "Jest & Enzyme"],
     "concepts": ["Team Work", "TDD", "Git Workflow", "API Fetches"],
-    "src": "https://github.com/MaxBSilver/marvel-whateverly",
-    "staticSite": "https://maxbsilver.github.io/marvel-whateverly/",
+    "src": "https://github.com/NimSum/marvel-whateverly",
+    "staticSite": "https://nimsum.github.io/marvel-whateverly/",
     "imgURL": "marvelously.jpg",
     "id": "4"
   },

@@ -94,7 +94,7 @@ export class Contact extends Component {
               <a href={`mailto:${this.state.email}`} rel="noopener noreferrer">
                 <img onClick={this.directEmail} src={require('../images/mail.svg')} alt="mail" title="Direct email"/>
               </a>
-              <a href={require('../Resume.pdf')}
+              <a href={require('../images/nimrod-garcia-resume.pdf')}
                 className='mobile-resume-download'
                 download>
                 Download My Resume

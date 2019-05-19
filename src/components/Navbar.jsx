@@ -62,7 +62,7 @@ export class Navbar extends Component {
             ? this.animationStyle : undefined}><a href="#contact">CONTACT</a></li>
             <li className="resume-download">
               <a
-                href={require('../Resume.pdf')}
+                href={require('../images/nimrod-garcia-resume.pdf')}
                 download>
                 Download My Resume
               </a>
