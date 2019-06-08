@@ -137,7 +137,7 @@ export const softSkills = [
   }
  ];
 
- export const skillLevels = [
+ export const languagesAndFrameworks = [
   { 
     name: 'React',
     imgName: 'react.svg',
