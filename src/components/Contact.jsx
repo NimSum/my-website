@@ -156,54 +156,40 @@ const Contact = () => {
     const [ enabled, enableSubmit ] = useState(false)
     const [ senderName, setSenderName ] = useState('')
     const [ senderEmail, setSenderEmail ] = useState('')
-    const [ senderMessage, sedSenderMessage ] = useState('')
+    const [ senderMessage, setSenderMessage ] = useState('')
     const [ currDate ] = useState(new Date())
 
   const decodeEmail = () => { 
     const coded = "BF22.onOWFn@o2nFj.W82";
     const key = "lLCvh2fqQW9po5b10HUOBjdi6DNyRXtkY8ZwEM4TaJPVFSm7sIcA3guKxGezrn"; 
     const shift = coded.length;
-    let link = "";
+    let email = "";
     let ltr;
     for (let i = 0; i < coded.length; i++) {
       if (key.indexOf(coded.charAt(i)) === -1) {
         ltr = coded.charAt(i)
-        link += (ltr)
+        email += (ltr)
       }
       else {     
         ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-        link += (key.charAt(ltr))
+        email += (key.charAt(ltr))
       }
     }
-    this.state.validEmail 
-      ? this.setState( {email: link} )
-      : this.setState( {email: '', enabled: false} );
-    this.validateInput();
+    setEmail(email)
   }
 
-  const inputHandler = e => {
+  const inputHandler = ({ target }) => {
     switch (true) {
-      case e.target.id === 'sender-email':
-        this.setState({senderEmail: e.target.value}, () => {
-          this.validateInput(true);
-        })
+      case target.id === 'sender-email':
+        setSenderEmail(target.value)
         break;
-      case e.target.id === 'sender-name':
-        this.setState({senderName: e.target.value}, () => {
-          this.validateInput();
-        })
+      case target.id === 'sender-name':
+        setSenderName(target.value)
         break;
       default:
-        this.setState({senderMessage: e.target.value}, () => {
-          this.validateInput();
-        })
+        setSenderMessage(target.value)
     }
-  }
-  
-  const directEmail = () => {
-    this.setState({validEmail: true}, () => {
-      this.email();
-    })
+    this.validateInput();
   }
 
   return (
