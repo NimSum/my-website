@@ -13,27 +13,25 @@ export const Skills = () => {
       ))}
     </section>
   )
-
-
-
-
+  
+  const generateSkills = () => languagesAndFrameworks.map(skill => (
+    <span className="lang-img-cont">
+      { skill.name }
+      <img 
+        src={require(`../images/${skill.imgName}`)} 
+        alt={ skill.name } 
+        title={ skill.name }/>
+    </span>)
+  )
 
   return (
     <section className="skillset-container">
       <h3 className="skill-box-title">My Skills</h3>
       <div className="skills-container">
-        { languagesAndFrameworks.map(skill => (
-            <span className="lang-img-cont">
-              { skill.name }
-              <img 
-                src={require(`../images/${skill.imgName}`)} 
-                alt={ skill.name } 
-                title={ skill.name }/>
-            </span>
-        ))}
+        { generateSkills() }   
       </div>
       <div className="soft-skills">
-          { generateSoftSkills() }
+        { generateSoftSkills() }
       </div>
     </section>
   )
