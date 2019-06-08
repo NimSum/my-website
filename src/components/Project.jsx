@@ -75,6 +75,34 @@ const Project = ({ imgURL, title, description, team, toolsUsed, concepts, static
   
   const [ isInfoShown, showInfo ] = useState(false);
 
+  const generateInfoBox = () => (
+    <section className="info-container">
+      <h3>{ title }</h3>
+      <h4>{ description }</h4>
+      <div className="info-box">
+        { Array.isArray(team) 
+          ? <p className="team-box">
+              <span className="title">Team</span>
+              {team.map((person, idx) => 
+                <span key={ idx }>
+                  <a href={ Object.values(person) }
+                    target="_blank" 
+                    rel="noopener noreferrer"  >
+                    { Object.keys(person)[0].split(' ')[0] }
+                  <img src={require(`../images/github-blue.svg`)} alt="Github"/>
+                  </a>
+              </span>)}
+            </p>
+          : <p className="solo-project"><span>{ team }</span></p> 
+        }
+        <p><span className="title">Tools</span>{ toolsUsed.map((tool, idx) => 
+        <span key={idx}>{ tool }</span>)}</p>
+        <p><span className="title">Concepts</span>{ concepts.map((concept, idx) => 
+        <span key={idx}>{ concept }</span>)}</p>
+      </div>
+    </section>
+  )
+
   return (
     <article 
       className="project-box"
@@ -84,33 +112,7 @@ const Project = ({ imgURL, title, description, team, toolsUsed, concepts, static
         src={require(`../images/${imgURL}`)} 
         alt={title}
         className="portfolio-img" />
-      { isInfoShown &&
-          (<section className="info-container">
-            <h3>{ title }</h3>
-            <h4>{ description }</h4>
-            <div className="info-box">
-              { Array.isArray(team) 
-                ? <p className="team-box">
-                    <span className="title">Team</span>
-                    {team.map((person, idx) => 
-                      <span key={ idx }>
-                        <a href={ Object.values(person) }
-                          target="_blank" 
-                          rel="noopener noreferrer"  >
-                          { Object.keys(person)[0].split(' ')[0] }
-                        <img src={require(`../images/github-blue.svg`)} alt="Github"/>
-                        </a>
-                    </span>)}
-                  </p>
-                : <p className="solo-project"><span>{ team }</span></p> 
-              }
-              <p><span className="title">Tools</span>{ toolsUsed.map((tool, idx) => 
-              <span key={idx}>{ tool }</span>)}</p>
-              <p><span className="title">Concepts</span>{ concepts.map((concept, idx) => 
-              <span key={idx}>{ concept }</span>)}</p>
-            </div>
-          </section>)
-      }
+      { isInfoShown && generateInfoBox() }
       <div className="project-icon-container">
           <a 
             href={ staticSite } 
