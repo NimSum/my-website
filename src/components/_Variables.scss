@@ -52,7 +52,7 @@ $hover-bgc-nav: hsl(180, 87%, 94%);
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform:scaleY(0);
+    transform:scaleY(.3);
   }
   to {
     opacity: 1;
