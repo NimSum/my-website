@@ -78,13 +78,13 @@ const Project = ({ imgURL, title, description, team, toolsUsed, concepts, static
   return (
     <article 
       className="project-box"
-      onMouseEnter={this.showInfo}
-      onMouseLeave={this.showInfo}>
+      onMouseEnter={() => showInfo(true)}
+      onMouseLeave={() => showInfo(false)}>
       <img 
         src={require(`../images/${imgURL}`)} 
         alt={title}
         className="portfolio-img" />
-      { this.state.showInfo &&
+      { isInfoShown &&
           (<section className="info-container">
             <h3>{ title }</h3>
             <h4>{ description }</h4>
