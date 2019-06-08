@@ -1,14 +1,25 @@
 export const projects = [
   {
+    "title": "SpaceXplorer",
+    "description": "A multi-page app that allows users to find out when the next rocket launches are, they also can learn about rockets, astronauts and more!",
+    "team" : "Solo Project",
+    "toolsUsed": ["React", "Redux", "SASS", "Jest & Enzyme", "React-router"],
+    "concepts": ["User Stories", "GitHub Workflow", "Async JS Testing", "UI/UX Design"],
+    "src": "https://github.com/NimSum/spacexplorer",
+    "staticSite": "https://nimsum.github.io/spacexplorer/#/",
+    "imgURL": "space-x-plorer.jpg",
+    "id": "9"
+  },
+  {
     "title": "git Commander",
     "description": "An interactive game that trains developers git commands ",
     "team" : "Solo Project",
     "toolsUsed": ["React", "SASS", "Jest & Enzyme"],
-    "concepts": ["User Stories", "Organized Workflow", "TDD", "API Fetches"],
+    "concepts": ["User Stories", "GitHub Workflow", "TDD", "API Fetches", "UI/UX Design"],
     "src": "https://github.com/NimSum/git-commander",
     "staticSite": "https://nimsum.github.io/git-commander/",
     "imgURL": "git-commander.jpg",
-    "id": "1"
+    "id": "8"
   },
   {
     "title": "Movie Tracker",
@@ -19,7 +30,7 @@ export const projects = [
     "src": "https://github.com/NimSum/movie-tracker",
     "staticSite": "https://nimsum.github.io/movie-tracker/",
     "imgURL": "movie-tracker.jpg",
-    "id": "2"
+    "id": "7"
   },
   {
     "title": "Star Wars api box",
@@ -30,7 +41,7 @@ export const projects = [
     "src": "https://github.com/NimSum/swapi-box",
     "staticSite": "https://nimsum.github.io/swapi-box/",
     "imgURL": "swapi-box.jpg",
-    "id": "3"
+    "id": "6"
   },
   {
     "title": "Marvelously",
@@ -45,7 +56,7 @@ export const projects = [
     "src": "https://github.com/NimSum/marvel-whateverly",
     "staticSite": "https://nimsum.github.io/marvel-whateverly/",
     "imgURL": "marvelously.jpg",
-    "id": "4"
+    "id": "5"
   },
   {
     "title": "Wheel of Mortys",
@@ -56,7 +67,7 @@ export const projects = [
     "src": "https://github.com/NimSum/wheel-of-mortys",
     "staticSite": "https://nimsum.github.io/wheel-of-mortys/",
     "imgURL": "wheel-of-mortys.jpg",
-    "id": "5"
+    "id": "4"
   },
   {
     "title": "Connect Four",
@@ -67,7 +78,7 @@ export const projects = [
     "src": "https://github.com/NimSum/connect-four-game",
     "staticSite": "https://nimsum.github.io/connect-four-game/index.html",
     "imgURL": "connect-four.jpg",
-    "id": "6"
+    "id": "3"
   },
   {
     "title": "Static Page Recreation",
@@ -78,7 +89,7 @@ export const projects = [
     "src": "https://github.com/NimSum/ng-comp-challenge-2",
     "staticSite": "https://nimsum.github.io/ng-comp-challenge-2/",
     "imgURL": "static-comp.jpg",
-    "id": "7"
+    "id": "2"
   },
   {
     "title": "Foto Finder",
@@ -89,64 +100,77 @@ export const projects = [
     "src": "https://github.com/NimSum/foto-finder",
     "staticSite": "https://nimsum.github.io/foto-finder/",
     "imgURL": "foto-finder.jpg",
-    "id": "8"
+    "id": "1"
   }
 ]
 
 export const softSkills = [
   { 
     title: 'Accessible & Responsive Applications',
-    body: 'Emphasizes the implementation of accessibility and cross-browser/device compatability'
+    body: 'Emphasizes the implementation of accessibility and cross-browser/device compatability',
+    id: 6
   },
   { 
     title: 'Problem Solver',
-    body: 'Creative problem solver, enjoys undertaking challenging problems and learning new concepts'
+    body: 'Creative problem solver, enjoys undertaking challenging problems and learning new concepts',
+    id: 5
   },
   { 
     title: 'Git & Github Workflow',
-    body: 'Proficient at using git & github tools to organize and maintain project workflow'
+    body: 'Proficient at using git & github tools to organize and maintain project workflow',
+    id: 4
   },
   { 
-   title: 'Communication',
-   body: 'Excelent communicator, values empathetic work environments'
+    title: 'Communication',
+    body: 'Excelent communicator, values empathetic work environments',
+    id: 3
   },
   { 
     title: 'Test Driven Development',
-    body: 'Skilled at using testing frameworks & libraries such as Jest & Enzyme / Mocha & Chai'
+    body: 'Skilled at using testing frameworks & libraries such as Jest & Enzyme / Mocha & Chai',
+    id: 2
   },
   { 
-   title: 'Object Oriented Programming',
-   body: 'Understands the benefits and concepts of OOP'
+    title: 'Object Oriented Programming',
+    body: 'Understands the benefits and concepts of OOP',
+    id: 1
   }
  ];
 
- export const skillLevels = [
+ export const languagesAndFrameworks = [
   { 
     name: 'React',
     imgName: 'react.svg',
+    id: 7
   },
   { 
     name: 'SASS',
     imgName: 'sass.svg',
+    id: 6
   },
   { 
     name: 'CSS',
     imgName: 'css.svg',
+    id: 5
   },
   { 
     name: 'HTML5',
     imgName: 'html.svg',
+    id: 4
   },
   { 
     name: 'Javascript',
     imgName: 'js.svg',
+    id: 3
   },
   { 
     name: 'Redux',
     imgName: 'redux.svg',
+    id: 2
   },
   { 
     name: 'Node.js',
     imgName: 'node.svg',
+    id: 1
   }
 ];
