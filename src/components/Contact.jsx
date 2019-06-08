@@ -163,19 +163,26 @@ const Contact = () => {
     const coded = "BF22.onOWFn@o2nFj.W82";
     const key = "lLCvh2fqQW9po5b10HUOBjdi6DNyRXtkY8ZwEM4TaJPVFSm7sIcA3guKxGezrn"; 
     const shift = coded.length;
-    let email = "";
+    let myEmail = "";
     let ltr;
     for (let i = 0; i < coded.length; i++) {
       if (key.indexOf(coded.charAt(i)) === -1) {
         ltr = coded.charAt(i)
-        email += (ltr)
+        myEmail += (ltr)
       }
       else {     
         ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-        email += (key.charAt(ltr))
+        myEmail += (key.charAt(ltr))
       }
     }
-    setEmail(email)
+    setEmail(myEmail)
+  }
+
+  const validateInput = () => {
+    if (senderName.length && senderEmail.length && senderMessage.length) {
+      enableSubmit(true);
+      decodeEmail();
+    } else enableSubmit(false);
   }
 
   const inputHandler = ({ target }) => {
@@ -189,7 +196,7 @@ const Contact = () => {
       default:
         setSenderMessage(target.value)
     }
-    this.validateInput();
+    validateInput();
   }
 
   return (
@@ -206,8 +213,8 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
               <img src={require('../images/linked-in.svg')} alt="linked in" />
             </a>
-            <a href={`mailto:${this.state.email}`} rel="noopener noreferrer">
-              <img onClick={this.directEmail} src={require('../images/mail.svg')} alt="mail" title="Direct email"/>
+            <a href={`mailto:${email}`} rel="noopener noreferrer">
+              <img onClick={ decodeEmail } src={require('../images/mail.svg')} alt="mail" title="Direct email"/>
             </a>
             <a href={require('../images/nimrod-garcia-resume.pdf')}
               className='mobile-resume-download'
@@ -216,34 +223,34 @@ const Contact = () => {
             </a>
         </div>
       </article>
-      <form action={`https://formspree.io/${this.state.email}`} method="POST">
+      <form action={`https://formspree.io/${email}`} method="POST">
         <div className="input-container">
           <label htmlFor="sender-name">* Your name:</label>
           <input 
-            onChange={this.inputHandler}
+            onChange={ inputHandler }
             name="name" 
             id="sender-name" 
             type="text">
           </input>
           <label htmlFor="sender-email">* Your e-mail:</label>
           <input 
-            onChange={this.inputHandler}
             name="email" 
+            onChange={ inputHandler }
             id="sender-email" 
             type="email">
           </input>
           <label htmlFor="message">* Your message:</label>
           <textarea 
-            onChange={this.inputHandler}
+            onChange={ inputHandler }
             name="message" 
             id="message" 
             type="text">
           </textarea>
           <input 
-            className={`submit-btn ${this.state.enabled && 'email-btn'}`}
+            className={`submit-btn ${ enabled && 'email-btn' }`}
             type="submit"
             value="Send"
-            disabled={!this.state.enabled}>
+            disabled={!enabled}>
           </input>
         </div>
       </form>
