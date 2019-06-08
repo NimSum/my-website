@@ -6,7 +6,7 @@ export const Skills = () => {
   const generateSoftSkills = () => (
     <section className="soft-skills-box">
       { softSkills.map(skill => (
-        <article>
+        <article key={ skill.id }>
           <h3>{ skill.title }</h3>
           <p>{ skill.body }</p>
         </article>
@@ -15,7 +15,7 @@ export const Skills = () => {
   )
   
   const generateSkills = () => languagesAndFrameworks.map(skill => (
-    <span className="lang-img-cont">
+    <span className="lang-img-cont" key={ skill.id }>
       { skill.name }
       <img 
         src={require(`../images/${skill.imgName}`)} 
