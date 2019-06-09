@@ -15,7 +15,7 @@ const App = () => {
   return isLoading
     ? <div>HIII</div>
     : <div className="App">
-        < Splash />
+        < Splash setLoading={ updateLoading } />
         < MainSection />
       </div>
 }

@@ -1,12 +1,18 @@
 section.splash {
   display: flex;
-  background: url('./images/splash.jpg') no-repeat;
   position: relative;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+
+  img.bg-image {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 
   article {
     display: flex;

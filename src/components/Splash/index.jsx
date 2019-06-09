@@ -1,7 +1,8 @@
 import React from 'react';
 
-const Splash = () => (
+const Splash = ({ setLoading }) => (
     <section className="splash" id="home">
+      <img className='bg-image' src={require("../../images/splash.jpg")} alt="sd"/>
       <article>
         <h1>Hi</h1>
         <div className="splash-intro">
