@@ -10,10 +10,10 @@ const Splash = () => (
         </div>
         <div className="splash-icon-container">
           <a href="https://github.com/NimSum" target="_blank" rel="noopener noreferrer">
-            <img src={require('../images/github-blue.svg')} alt="github" />
+            <img src={require('../../images/github-blue.svg')} alt="github" />
           </a>
           <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer">
-            <img src={require('../images/linked-in.svg')} alt="linked in" />
+            <img src={require('../../images/linked-in.svg')} alt="linked in" />
           </a>
         </div>
       </article>

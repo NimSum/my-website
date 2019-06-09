@@ -57,15 +57,15 @@ const Contact = () => {
         </div>
         <div className="icon-container">
           <a href="https://github.com/NimSum" target="_blank" rel="noopener noreferrer" title="Github">
-              <img src={require('../images/github-blue.svg')} alt="github" />
+              <img src={require('../../images/github-blue.svg')} alt="github" />
             </a>
             <a href="https://www.linkedin.com/in/nimrod-garcia/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-              <img src={require('../images/linked-in.svg')} alt="linked in" />
+              <img src={require('../../images/linked-in.svg')} alt="linked in" />
             </a>
             <a href={`mailto:${email}`} rel="noopener noreferrer">
-              <img onClick={ decodeEmail } src={require('../images/mail.svg')} alt="mail" title="Direct email"/>
+              <img onClick={ decodeEmail } src={require('../../images/mail.svg')} alt="mail" title="Direct email"/>
             </a>
-            <a href={require('../images/nimrod-garcia-resume.pdf')}
+            <a href={require('../../images/nimrod-garcia-resume.pdf')}
               className='mobile-resume-download'
               download>
               Download My Resume
@@ -108,12 +108,12 @@ const Contact = () => {
         <section className="site-info">
           <div>
             <p>This page was built and deployed with:</p>
-            <img src={require('../images/react.svg')} alt="react" title="React"/>
-            <img src={require('../images/sass.svg')} alt="sass" title="SASS"/>
-            <img src={require('../images/aws.svg')} alt="sass" title="AWS S3, Cloudfront, Route53"/>
+            <img src={require('../../images/react.svg')} alt="react" title="React"/>
+            <img src={require('../../images/sass.svg')} alt="sass" title="SASS"/>
+            <img src={require('../../images/aws.svg')} alt="sass" title="AWS S3, Cloudfront, Route53"/>
           </div>
           <a href="https://github.com/NimSum/my-website" title="Source" target="_blank" rel="noopener noreferrer"><p>View Source</p>
-            <img src={require('../images/source.svg')} alt="sass" />
+            <img src={require('../../images/source.svg')} alt="sass" />
           </a>
         </section>
       </footer>

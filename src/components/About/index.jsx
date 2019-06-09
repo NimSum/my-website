@@ -1,5 +1,5 @@
 import React from 'react'
-import { Skills } from './Skills';
+import { Skills } from '../Skills';
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <div className="my-story-container">
         <section className="my-story-beginning">
         <div className="title-container">
-          <img src={require('../images/nimsum.jpg')} alt="Nim's Portrait"/> 
+          <img src={require('../../images/nimsum.jpg')} alt="Nim's Portrait"/> 
           <h3 className="story-title">My Story</h3>
         </div>
           <h4 className="story-beginning">Born and raised in the Philippines,</h4>
