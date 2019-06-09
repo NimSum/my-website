@@ -1,14 +1,23 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import Splash from '../Splash';
 import MainSection from '../MainSection';
 
 const App = () => {
-  return (
-    <div className="App">
-      < Splash />
-      < MainSection />
-    </div>
-  );
+
+  const [ isLoading, setLoading ] = useState(false);
+
+  const updateLoading = (bool) => {
+    setLoading(bool)
+  }
+
+
+
+  return isLoading
+    ? <div>HIII</div>
+    : <div className="App">
+        < Splash />
+        < MainSection />
+      </div>
 }
 
 export default App;
