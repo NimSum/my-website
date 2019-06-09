@@ -1,5 +1,5 @@
 import React from 'react';
-import { languagesAndFrameworks, softSkills } from '../PortfolioData';
+import { languagesAndFrameworks, softSkills } from '../../utils/PortfolioData';
 
 export const Skills = () => {
 
@@ -18,7 +18,7 @@ export const Skills = () => {
     <span className="lang-img-cont" key={ skill.id }>
       { skill.name }
       <img 
-        src={require(`../images/${skill.imgName}`)} 
+        src={require(`../../images/${skill.imgName}`)} 
         alt={ skill.name } 
         title={ skill.name }/>
     </span>)
