@@ -21,7 +21,7 @@ export const projects = [
     "concepts": ["GitHub Workflow", "Async JS Testing", "Back-end Development", "Back-end Testing", "Team Work"],
     "src": "https://github.com/NimSum/trapper-keeper",
     "staticSite": null,
-    "imgURL": "space-x-plorer.jpg",
+    "imgURL": "trapper-keeper.jpg",
     "id": "9"
   },
   {
