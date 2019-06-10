@@ -12,20 +12,11 @@ body {
   margin: auto;
   font-family: $primary-font;
   background-color: hsl(206, 56%, 88%);
-  max-width: 1700px;
 }
 
 div.App {
   animation: app-load 1s linear;
 }
 
-@keyframes app-load {
-  from {
-    opacity: .5;
-    transform: translateY(-20px);
-  } to {
-    opacity: 1;
-  };
-}
 
 
