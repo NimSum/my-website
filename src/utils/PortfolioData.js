@@ -8,6 +8,20 @@ export const projects = [
     "src": "https://github.com/NimSum/spacexplorer",
     "staticSite": "https://nimsum.github.io/spacexplorer/#/",
     "imgURL": "space-x-plorer.jpg",
+    "id": "10"
+  },
+  {
+    "title": "Trapper Keeper",
+    "description": "A replication of the google app called Google Keep, users can create notes/check lists. Users can also delete/edit/change the color theme of each card",
+    "team" : [ 
+      { "Brennan Duffey" : "https://github.com/BrennanDuffey" },
+      { "Bridgett Coyle" : "https://github.com/B-Coyle" },
+      { "Adam Niedzwiecki" : "https://github.com/AdamN8142" } ],
+    "toolsUsed": ["Node & Express", "React", "Redux", "SASS", "Jest & Enzyme", "React-router"],
+    "concepts": ["GitHub Workflow", "Async JS Testing", "Back-end Development", "Back-end Testing", "Team Work"],
+    "src": "https://github.com/NimSum/trapper-keeper",
+    "staticSite": null,
+    "imgURL": "trapper-keeper.jpg",
     "id": "9"
   },
   {

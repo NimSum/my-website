@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import Splash from '../Splash';
 import MainSection from '../MainSection';
+import loadingIcon from '../../images/loading.svg';
 
-const App = () => {
-  return (
-    <div className="App">
-      < Splash />
-      < MainSection />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    < Splash />
+    < MainSection />
+  </div>
+)
 
 export default App;

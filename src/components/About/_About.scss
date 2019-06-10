@@ -1,6 +1,13 @@
-section.about-section {
+div.about-bg {
   background: url('./images/bg-cont-1.svg');
   background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+section.about-section {
+  max-width: 1700px;
+  margin: 0 auto;
   padding: 5% 0;
   display: grid;
   align-content: center;

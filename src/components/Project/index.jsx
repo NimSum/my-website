@@ -32,6 +32,17 @@ const Project = ({ imgURL, title, description, team, toolsUsed, concepts, static
     </section>
   )
 
+  const ghPages = () => (
+    <a 
+      href={ staticSite } 
+      target="_blank" 
+      rel="noopener noreferrer"  
+      alt={ title }>
+      <span>GH Pages</span>
+      <img title="Github Pages" src={require('../../images/github-blue.svg')} alt="Github Pages"/>
+    </a>
+  )
+
   return (
     <article 
       className="project-box"
@@ -43,14 +54,7 @@ const Project = ({ imgURL, title, description, team, toolsUsed, concepts, static
         className="portfolio-img" />
       { isInfoShown && generateInfoBox() }
       <div className="project-icon-container">
-          <a 
-            href={ staticSite } 
-            target="_blank" 
-            rel="noopener noreferrer"  
-            alt={ title }>
-            <span>GH Pages</span>
-            <img title="Github Pages" src={require('../../images/github-blue.svg')} alt="Github Pages"/>
-          </a>
+          { staticSite && ghPages() }
           <a 
             href={ src } 
             target="_blank" rel="noopener noreferrer"  

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+$primary-font: 'Nunito', sans-serif;
+
+
+// BLUE
+$primary-light: hsl(200, 76%, 90%);
+$secondary-light: hsl(191, 76%, 38%);
+$primary-dark: hsl(222, 50%, 29%);
+$secondary-dark: hsl(204, 64%, 33%);
+
+
+$font-lighter: hsl(0, 12%, 97%);
+$font-light: hsl(213, 47%, 47%);
+$font-darker: hsl(212, 64%, 19%);
+$font-dark: hsl(208, 40%, 35%);
+
+
+$bgc-light: hsl(186, 68%, 88%);
+$bgc-dark: hsl(185, 60%, 78%);
+
+$splash-bgc-light: hsla(200, 76%, 90%, .7);
+$nav-bgc: hsl(183, 49%, 63%);
+$hover-bgc-nav: hsl(180, 87%, 94%);
+
+.slide-left {
+  box-shadow: inset -200px 0 0 0 $hover-bgc-nav;
+}
+
+.slide-right {
+  box-shadow: inset 200px 0 0 0 $hover-bgc-nav;
+}
+
+.email-btn {
+  border: 3px solid white !important;
+  color: white !important ;
+  background-color: transparent ;
+  cursor: pointer;
+
+  &:hover {
+    color: $font-light ;
+    border-color: $font-light !important;
+  }
+}
+
+@mixin box-styling {
+  margin: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scaleY(.5);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes app-load {
+  from {
+    opacity: .5;
+    transform: translateY(-20px);
+  } to {
+    opacity: 1;
+  };
+}
+
+$media-query-phone: "only screen and (min-width: 320px) and (max-width: 549px)";
+$media-query-tablets: "only screen and (min-width: 550px) and (max-width: 808px)";
