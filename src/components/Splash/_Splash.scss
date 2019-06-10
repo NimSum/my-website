@@ -74,7 +74,7 @@ section.splash {
   
     .arrow-down {
       box-sizing: border-box;
-      transition: 350ms ease-in-out;
+      transition: 350ms linear;
       margin: auto;
       height: 120px;
       width: 120px;
@@ -86,7 +86,7 @@ section.splash {
 
       &:hover {
         border-width: 0px 6px 6px 0px;
-        transform: scale(1.2) rotate(45deg);
+        transform: rotate(45deg);
       }
   
       a {
@@ -97,7 +97,7 @@ section.splash {
     }
 
     &:hover {
-      font-size: 1.1rem;
+      transform: scale(1.2);
     }
   }
 
