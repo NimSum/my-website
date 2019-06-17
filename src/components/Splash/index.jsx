@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Splash = () => (
+const Splash = () => {
+  const [ imgLoaded, imgLoading ] = useState(false);
+
+  const setLoading = (bool) => {
+    imgLoading(bool)
+  }
+
+  useEffect(() => setLoading(true))
+
+  return (
     <section className="splash" id="home">
       <img 
         className='bg-image' 
         src={require("../../images/splash.jpg")} 
-        alt="sd"/>
+        alt="sd"
+        onLoad={ () => imgLoading(false) }/>
       <article>
         <h1>Hi</h1>
         <div className="splash-intro">
@@ -29,6 +39,6 @@ const Splash = () => (
       </div>
       <span className="photo-credit">Photo by Joel Filipe on Unsplash</span>
     </section>
-)
-
+  )
+}
 export default Splash;
