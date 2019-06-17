@@ -1,22 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Splash = () => {
-  const [ imgLoaded, imgLoading ] = useState(false);
-
-  const setLoading = (bool) => {
-    imgLoading(bool)
-  }
-
-  useEffect(() => setLoading(true))
-
+  const [ imgLoaded, loadImage ] = useState(false);
+  
   return (
     <section className="splash" id="home">
       <img 
         className='bg-image' 
         src={require("../../images/splash.jpg")} 
         alt="sd"
-        onLoad={ () => imgLoading(false) }/>
-      <article>
+        onLoad={ () => loadImage(true) }/>
+      {imgLoaded && <article>
         <h1>Hi</h1>
         <div className="splash-intro">
           <p>I'm <span>Nimrod Garcia,</span> </p>  
@@ -30,14 +24,14 @@ const Splash = () => {
             <img src={require('../../images/linked-in.svg')} alt="linked in" />
           </a>
         </div>
-      </article>
-      <div className="arrow-down-container">
+      </article>}
+      {imgLoaded && <div className="arrow-down-container">
         <div className="arrow-down">
           <a href="#about">About me</a>
         </div>
         <span className="arrow-down-desc">ABOUT ME</span>
-      </div>
-      <span className="photo-credit">Photo by Joel Filipe on Unsplash</span>
+      </div>}
+      {imgLoaded && <span className="photo-credit">Photo by Joel Filipe on Unsplash</span>}
     </section>
   )
 }
