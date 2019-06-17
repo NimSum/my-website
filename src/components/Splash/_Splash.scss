@@ -163,5 +163,8 @@ section.splash {
   .photo-credit {
     font-size: .6rem !important;
   }
+}
 
+section.dropAnimation {
+  animation: 800ms app-load ease-in-out;
 }
