@@ -1,5 +1,18 @@
 export const projects = [
   {
+    "title": "Palette Pal",
+    "description": "A full stack app that allows users to create color palettes for their projects. Users can also sign up to save, modify or add additional color palettes.",
+    "team" : [ 
+      { "Lynne Rang(Frontend)" : "https://github.com/lynnerang" }
+    ],
+    "toolsUsed": ["React", "Node.js & Express", "Jest & Enzyme", "JWT Authentication", "Travis CI"],
+    "concepts": ["Express Middleware", "Pair Programming", "UI/UX Design", "TDD"],
+    "src": "https://github.com/NimSum/palette-pal-frontend",
+    "staticSite": " https://nimsum.github.io/palette-pal-frontend/",
+    "imgURL": "palette-pal.jpg",
+    "id": "11"
+  },
+  {
     "title": "CoderDojo Colorado",
     "description": "An open source app that helps computer programming organizations to create/manage events and dojos in Denver, students can attend events to gain achievements by completing goals.",
     "team" : [ 
