@@ -22,8 +22,8 @@ export const projects = [
     ],
     "toolsUsed": ["React", "React Router", "Jest & Enzyme", "GraphQL(Apollo)", "Travis CI"],
     "concepts": ["Agile Development", "GitHub Workflow", "Backend Collaboration", "UI/UX Design"],
-    "src": "https://github.com/NimSum/harvard-art-museum",
-    "staticSite": "https://harvard-museum-explorer.herokuapp.com/",
+    "src": "https://github.com/turing-coderdojo",
+    "staticSite": "https://coderdojo-colorado.herokuapp.com",
     "imgURL": "coderdojo-denver.jpg",
     "id": "11"
   },
