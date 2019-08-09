@@ -48,7 +48,7 @@ const Project = ({ imgURL, title, description, team, toolsUsed, concepts, static
             target="_blank" 
             rel="noopener noreferrer"  
             alt={ title }>
-            <span>GH Pages</span>
+            <span>Live Demo</span>
             <img title="Github Pages" src={require('../images/github-blue.svg')} alt="Github Pages"/>
           </a>
           <a 

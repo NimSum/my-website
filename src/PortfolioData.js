@@ -1,5 +1,20 @@
 export const projects = [
   {
+    "title": "CoderDojo Colorado",
+    "description": "An open source app that helps computer programming organizations to create/manage events and dojos in Denver, students can attend events to gain achievements by completing goals.",
+    "team" : [ 
+      { "Tiffany Bacher(Frontend)" : "https://github.com/tiffanybacher" },
+      { "Erik Konner(Frontend)" : "https://github.com/ehk9000" },
+      { "Matt Weiss(Backend)" : "https://github.com/Matt-Weiss" },
+    ],
+    "toolsUsed": ["React", "React Router", "Jest & Enzyme", "GraphQL(Apollo)", "Travis CI"],
+    "concepts": ["Agile Development", "GitHub Workflow", "Backend Collaboration", "UI/UX Design"],
+    "src": "https://github.com/NimSum/harvard-art-museum",
+    "staticSite": "https://harvard-museum-explorer.herokuapp.com/",
+    "imgURL": "coderdojo-denver.jpg",
+    "id": "11"
+  },
+  {
     "title": "Harvard Art Museum Explorer",
     "description": "This app was shows images taken by Harvard Musuem of Arts and also allows for exploring the art within the museum. The requirements for this project were to learn and create a Vue app within 5 days",
     "team" : "Solo Project",
