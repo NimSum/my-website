@@ -1,12 +1,18 @@
 section.splash {
   display: flex;
-  background: url('./images/splash.jpg') no-repeat;
   position: relative;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+
+  img.bg-image {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 
   article {
     display: flex;
@@ -68,7 +74,7 @@ section.splash {
   
     .arrow-down {
       box-sizing: border-box;
-      transition: 350ms ease-in-out;
+      transition: 350ms linear;
       margin: auto;
       height: 120px;
       width: 120px;
@@ -80,7 +86,7 @@ section.splash {
 
       &:hover {
         border-width: 0px 6px 6px 0px;
-        transform: scale(1.2) rotate(45deg);
+        transform: rotate(45deg);
       }
   
       a {
@@ -91,7 +97,7 @@ section.splash {
     }
 
     &:hover {
-      font-size: 1.1rem;
+      transform: scale(1.2);
     }
   }
 
@@ -157,5 +163,8 @@ section.splash {
   .photo-credit {
     font-size: .6rem !important;
   }
+}
 
+section.dropAnimation {
+  animation: 800ms app-load ease-in-out;
 }

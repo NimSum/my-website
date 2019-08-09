@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 
 const Project = ({ imgURL, title, description, team, toolsUsed, concepts, staticSite, src }) => {
   
@@ -18,7 +18,7 @@ const Project = ({ imgURL, title, description, team, toolsUsed, concepts, static
                     target="_blank" 
                     rel="noopener noreferrer"  >
                     { Object.keys(person)[0].split(' ')[0] }
-                  <img src={require(`../images/github-blue.svg`)} alt="Github"/>
+                  <img src={require(`../../images/github-blue.svg`)} alt="Github"/>
                   </a>
               </span>)}
             </p>
@@ -32,31 +32,35 @@ const Project = ({ imgURL, title, description, team, toolsUsed, concepts, static
     </section>
   )
 
+  const ghPages = () => (
+    <a 
+      href={ staticSite } 
+      target="_blank" 
+      rel="noopener noreferrer"  
+      alt={ title }>
+      <span>Live Demo</span>
+      <img title="Github Pages" src={require('../../images/github-blue.svg')} alt="Github Pages"/>
+    </a>
+  )
+
   return (
     <article 
       className="project-box"
       onMouseEnter={() => showInfo(true)}
       onMouseLeave={() => showInfo(false)}>
       <img 
-        src={require(`../images/${imgURL}`)} 
+        src={require(`../../images/${imgURL}`)} 
         alt={title}
         className="portfolio-img" />
       { isInfoShown && generateInfoBox() }
       <div className="project-icon-container">
-          <a 
-            href={ staticSite } 
-            target="_blank" 
-            rel="noopener noreferrer"  
-            alt={ title }>
-            <span>Live Demo</span>
-            <img title="Github Pages" src={require('../images/github-blue.svg')} alt="Github Pages"/>
-          </a>
+          { staticSite && ghPages() }
           <a 
             href={ src } 
             target="_blank" rel="noopener noreferrer"  
             alt={ title }>
             <span>Source</span>
-            <img title="Source" src={require('../images/source.svg')} alt="Source"/>
+            <img title="Source" src={require('../../images/source.svg')} alt="Source"/>
           </a>
           </div>
     </article>

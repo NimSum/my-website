@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { projects } from '../PortfolioData';
-import Project from './Project';
+import React from 'react';
+import { projects } from '../../utils/PortfolioData';
+import Project from '../Project';
 
 const Portfolio = () => {
   return (

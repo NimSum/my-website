@@ -60,7 +60,7 @@ const Navbar = () => {
           ? animationStyle : undefined}><a href="#contact">CONTACT</a></li>
           <li className="resume-download">
             <a
-              href={require('../images/nimrod-garcia-resume.pdf')}
+              href={require('../../images/nimrod-garcia-resume.pdf')}
               download>
               Download My Resume
             </a>

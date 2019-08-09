@@ -17,9 +17,10 @@ section.portfolio-section {
     overflow: scroll;
     height: 80vh;
     display: grid;
-    max-width: 1150px;
+    width: 90vw;
+    max-width: 1250px;
     margin: auto;
-    padding: 1%;
+    padding: 2%;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     justify-items: center;
   }

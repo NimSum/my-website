@@ -78,3 +78,45 @@ section.skillset-container {
     justify-content: space-between;
   }
 }
+
+section.soft-skills-box {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-gap: 2%;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+
+  article {
+    margin: 10px;
+
+    h3 {
+      color: $font-darker;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 10px 0;
+      color: $font-dark;
+    }
+  }
+}
+
+@media #{ $media-query-phone } {
+  section.soft-skills-box {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    article {
+      padding: 10px;
+    }
+  }
+}
+
+@media #{ $media-query-tablets } {
+  section.soft-skills-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
