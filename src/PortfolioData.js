@@ -1,5 +1,16 @@
 export const projects = [
   {
+    "title": "Harvard Art Museum Explorer",
+    "description": "This app was shows images taken by Harvard Musuem of Arts and also allows for exploring the art within the museum. The requirements for this project were to learn and create a Vue app within 5 days",
+    "team" : "Solo Project",
+    "toolsUsed": ["Vue", "Vue Router", "Jest & vue-test-utils"],
+    "concepts": ["Rapid Development", "GitHub Workflow", "Async JS Testing", "UI/UX Design"],
+    "src": "https://github.com/NimSum/harvard-art-museum",
+    "staticSite": "https://harvard-museum-explorer.herokuapp.com/",
+    "imgURL": "harvard-museum.jpg",
+    "id": "10"
+  },
+  {
     "title": "SpaceXplorer",
     "description": "A multi-page app that allows users to find out when the next rocket launches are, they also can learn about rockets, astronauts and more!",
     "team" : "Solo Project",
