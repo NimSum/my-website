@@ -7,7 +7,7 @@ section.contact-section {
   
   article {
     display: flex;
-    padding-top: 70px;
+    padding-top: 15%;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
@@ -74,6 +74,7 @@ section.contact-section {
 
     label {
       font-weight: bold;
+      text-align: left;
       color: $font-darker;
     }
 
@@ -195,7 +196,7 @@ section.contact-section {
     min-width: 300px;
     margin: 10px auto !important;
     height: 300px;
-    width: 90% !important;
+    width: 95% !important;
 
     input {
       width: 100%;

@@ -71,38 +71,40 @@ const Contact = () => {
               Download My Resume
             </a>
         </div>
+
+        <form action={`https://formspree.io/${email}`} method="POST">
+          <div className="input-container">
+            <label htmlFor="sender-name">* Your name:</label>
+            <input 
+              onChange={ inputHandler }
+              name="name" 
+              id="sender-name" 
+              type="text">
+            </input>
+            <label htmlFor="sender-email">* Your e-mail:</label>
+            <input 
+              name="email" 
+              onChange={ inputHandler }
+              id="sender-email" 
+              type="email">
+            </input>
+            <label htmlFor="message">* Your message:</label>
+            <textarea 
+              onChange={ inputHandler }
+              name="message" 
+              id="message" 
+              type="text">
+            </textarea>
+            <input 
+              className={`submit-btn ${ enabled && 'email-btn' }`}
+              type="submit"
+              value="Send"
+              disabled={!enabled}>
+            </input>
+          </div>
+        </form>
       </article>
-      <form action={`https://formspree.io/${email}`} method="POST">
-        <div className="input-container">
-          <label htmlFor="sender-name">* Your name:</label>
-          <input 
-            onChange={ inputHandler }
-            name="name" 
-            id="sender-name" 
-            type="text">
-          </input>
-          <label htmlFor="sender-email">* Your e-mail:</label>
-          <input 
-            name="email" 
-            onChange={ inputHandler }
-            id="sender-email" 
-            type="email">
-          </input>
-          <label htmlFor="message">* Your message:</label>
-          <textarea 
-            onChange={ inputHandler }
-            name="message" 
-            id="message" 
-            type="text">
-          </textarea>
-          <input 
-            className={`submit-btn ${ enabled && 'email-btn' }`}
-            type="submit"
-            value="Send"
-            disabled={!enabled}>
-          </input>
-        </div>
-      </form>
+    
       <footer>
         <p className="copy-right">Copyright &copy; { currDate.getFullYear() } Nimsum</p>
         <section className="site-info">
