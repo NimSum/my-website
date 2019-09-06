@@ -17,15 +17,13 @@ article.project-box {
   }
 
   section.info-container {
-    animation: fade-in 400ms cubic-bezier(.5,.18,.57,.87);
-    transform-origin: bottom;
+    animation: fade-in 350ms cubic-bezier(.5,.18,.57,.87);
     width: 88%;
     border-bottom-left-radius: 10px;
-    min-height: 70%;
     position: absolute;
     padding: 5px;
     bottom: 0;
-    background-color: hsla(255, 255, 255, .8);
+    background-color: hsla(255, 255, 255, .9);
 
     div.info-box {
       display: flex;
@@ -72,7 +70,6 @@ article.project-box {
         justify-content: center;
         align-items: center;
         color: $font-lighter;
-
       }
 
       a {
@@ -84,6 +81,7 @@ article.project-box {
       text-align: center;
       color: $font-light;
     }
+    
     h4 {
       border-bottom: 1px solid $font-light;
       color: $font-darker;
@@ -102,7 +100,8 @@ article.project-box {
     padding: 5px;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.8) 20%, hsla(0, 0%, 100%, 0.8) 80%, hsla(0, 0%, 100%, 0) 100%);    position: absolute;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.8) 20%, hsla(0, 0%, 100%, 0.8) 80%, hsla(0, 0%, 100%, 0) 100%);    
+    position: absolute;
     right: 0;
     top: 0;
 
