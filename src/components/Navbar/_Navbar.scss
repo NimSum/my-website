@@ -42,16 +42,19 @@ header {
         display: flex;
         height: 100%;
         align-items: center;
-        font-size: .8rem;
         right: 0;
         width: 110px;
         text-align: center;
 
         a {
-          padding: 2px;
+          padding: 4px;
           line-height: 20px;
           word-wrap: wrap;
-          text-decoration: underline;
+          color: $hover-bgc-nav;
+        }
+
+        &:hover a {
+          color: $font-darker;
         }
       }
     }

@@ -61,8 +61,9 @@ const Navbar = () => {
           <li className="resume-download">
             <a
               href={require('../../images/nimrod-garcia-resume.pdf')}
-              download>
-              Download My Resume
+              target="_blank"
+              rel="noopener noreferrer">
+              View My Resume
             </a>
           </li>
         </ul>
