@@ -21,7 +21,7 @@ export const projects = [
 			"JWT"
 		],
 		src: "https://github.com/NimSum/connect-four-fe",
-		staticSite: "https://github.com/NimSum/connect-four-fe",
+		staticSite: "https://nimsum.github.io/connect-four-fe",
 		imgURL: "connect-4-friends.jpg",
 		id: "14"
 	},
