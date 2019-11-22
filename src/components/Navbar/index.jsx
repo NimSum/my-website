@@ -47,8 +47,6 @@ const Navbar = ({ currentSection, handleSetCurrentSection }) => {
 
 	return (
 		<header>
-    <header> 
-		<header>
 			<nav>
 				<ul>
 					<li
