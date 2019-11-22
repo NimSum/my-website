@@ -1,19 +1,17 @@
-*, ::before, ::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  margin: auto;
-  font-family: $primary-font;
-  background-color: hsl(206, 56%, 88%);
+	margin: auto;
+	font-family: $primary-font;
+	background-color: hsl(206, 56%, 88%);
 }
-
-
-
-
