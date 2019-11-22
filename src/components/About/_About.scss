@@ -1,108 +1,107 @@
 div.about-bg {
-  background: url('./images/bg-cont-1.svg');
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+	background: url("./images/bg-cont-1.svg");
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
 }
 
 section.about-section {
-  max-width: 1700px;
-  margin: 0 auto;
-  padding: 5% 0;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-template-columns: 1.5fr 3fr;
-  grid-template-areas: 
-    "story skills" 
-    "story skills";
+	max-width: 1700px;
+	margin: 0 auto;
+	padding: 5% 0;
+	display: grid;
+	align-content: center;
+	justify-items: center;
+	grid-template-columns: 1.5fr 3fr;
+	grid-template-areas:
+		"story skills"
+		"story skills";
 
-  article.my-story {
-    border: none;
-    grid-area: story;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 500px;
-    margin: auto;
+	article.my-story {
+		border: none;
+		grid-area: story;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		max-width: 500px;
+		margin: auto;
 
-    div.my-story-container {
-      background-color: $splash-bgc-light;
-      @include box-styling;
-    }
+		div.my-story-container {
+			background-color: $splash-bgc-light;
+			@include box-styling;
+		}
 
-    p {
-      text-indent: 2rem;
-      color: $font-dark;
-    }
+		p {
+			text-indent: 2rem;
+			color: $font-dark;
+		}
 
-    h4 {
-      margin: 5px;
-      color: $font-light;
-    }
-    
-    section {
-      padding: 15px 5px;
-      margin: 10px 0;
-      border-bottom: 2px solid $font-lighter;
-    }
+		h4 {
+			margin: 5px;
+			color: $font-light;
+		}
 
-    section.my-story-beginning {
-      min-width: 300px;
+		section {
+			padding: 15px 5px;
+			margin: 10px 0;
+			border-bottom: 2px solid $font-lighter;
+		}
 
-      div.title-container {
-        text-align: center;
-        margin-bottom: 30px;
-        border-bottom: 2px solid $font-lighter;
+		section.my-story-beginning {
+			min-width: 300px;
 
-        img {
-          border-radius: 50%;
-          width: 30%;
-          border: 4px solid $font-lighter;
-        }
+			div.title-container {
+				text-align: center;
+				margin-bottom: 30px;
+				border-bottom: 2px solid $font-lighter;
 
-        h3 {
-          margin: 10px;
-          color: $font-darker;
-        }
-      }
-    }
+				img {
+					border-radius: 50%;
+					width: 30%;
+					border: 4px solid $font-lighter;
+				}
 
-    section.my-story-software {
-      border: none;
-    }
-  }
+				h3 {
+					margin: 10px;
+					color: $font-darker;
+				}
+			}
+		}
 
-  article.my-skillset {
-    grid-area: skills;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    @include box-styling;
-    margin: auto;
-  }
+		section.my-story-software {
+			border: none;
+		}
+	}
+
+	article.my-skillset {
+		grid-area: skills;
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		@include box-styling;
+		margin: auto;
+	}
 }
 
 @media #{ $media-query-phone } {
-  article.my-skillset,
-  article.my-story {
-    width: 100%;
-    div.my-story-container {
-      min-width: 320px;
-    }
-  }
+	article.my-skillset,
+	article.my-story {
+		width: 100%;
+		div.my-story-container {
+			min-width: 320px;
+		}
+	}
 }
 
-
 @media only screen and (max-width: 1150px) {
-  section.about-section {
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-    align-items: center;
-    
-    article {
-      margin: auto;
-    }
-  }
+	section.about-section {
+		display: flex;
+		flex-direction: column;
+		overflow: scroll;
+		align-items: center;
+
+		article {
+			margin: auto;
+		}
+	}
 }
