@@ -23,7 +23,7 @@ export const projects = [
 		src: "https://github.com/NimSum/connect-four-fe",
 		staticSite: "https://github.com/NimSum/connect-four-fe",
 		imgURL: "connect-4-friends.jpg",
-		id: "13"
+		id: "14"
 	},
 	{
 		title: "Palette Pal",
@@ -41,7 +41,7 @@ export const projects = [
 		src: "https://github.com/NimSum/palette-pal-frontend",
 		staticSite: "https://nimsum.github.io/palette-pal-frontend/",
 		imgURL: "palette-pal.jpg",
-		id: "12"
+		id: "13"
 	},
 	{
 		title: "CoderDojo Colorado",
@@ -68,7 +68,7 @@ export const projects = [
 		src: "https://github.com/turing-coderdojo",
 		staticSite: "https://coderdojo-colorado.herokuapp.com",
 		imgURL: "coderdojo-denver.jpg",
-		id: "11"
+		id: "12"
 	},
 	{
 		title: "Harvard Art Museum Explorer",
@@ -85,7 +85,7 @@ export const projects = [
 		src: "https://github.com/NimSum/harvard-art-museum",
 		staticSite: "https://harvard-museum-explorer.herokuapp.com/",
 		imgURL: "harvard-museum.jpg",
-		id: "10"
+		id: "11"
 	},
 	{
 		title: "SpaceXplorer",
