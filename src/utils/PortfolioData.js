@@ -1,5 +1,31 @@
 export const projects = [
 	{
+		title: "Connect 4 Friends",
+		description:
+			"Chat and play Connect 4 with your friends or anyone connected. Users can create individual game rooms that allows them to play Connect 4 with other users and chat privately.",
+		team: "Solo Project",
+		toolsUsed: [
+			"MERN Stack",
+			"Socket.io",
+			"Redux",
+			"Mocha",
+			"Material UI",
+			"TypeScript"
+		],
+		concepts: [
+			"Express Middleware",
+			"UI/UX Design",
+			"WebSockets",
+			"React Hooks",
+			"OOP",
+			"JWT"
+		],
+		src: "https://github.com/NimSum/connect-four-fe",
+		staticSite: "https://github.com/NimSum/connect-four-fe",
+		imgURL: "connect-4-friends.jpg",
+		id: "13"
+	},
+	{
 		title: "Palette Pal",
 		description:
 			"A full stack app that allows users to create color palettes for their projects. Users can also sign up to save, modify or add additional color palettes.",
@@ -13,9 +39,9 @@ export const projects = [
 		],
 		concepts: ["Express Middleware", "Pair Programming", "UI/UX Design", "TDD"],
 		src: "https://github.com/NimSum/palette-pal-frontend",
-		staticSite: " https://nimsum.github.io/palette-pal-frontend/",
+		staticSite: "https://nimsum.github.io/palette-pal-frontend/",
 		imgURL: "palette-pal.jpg",
-		id: "11"
+		id: "12"
 	},
 	{
 		title: "CoderDojo Colorado",
