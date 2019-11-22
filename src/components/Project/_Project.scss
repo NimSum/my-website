@@ -1,141 +1,150 @@
 article.project-box {
-  position: relative;
-  margin: 20px;
-  min-width: 390px; 
-  max-width: 550px;
+	position: relative;
+	margin: 20px;
+	min-width: 390px;
+	max-width: 550px;
+	display: flex;
+	align-items: center;
 
-  a {
-    text-decoration: none;
-    color: $font-dark;
-  }
+	a {
+		text-decoration: none;
+		color: $font-dark;
+	}
 
-  img.portfolio-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
+	img.portfolio-img {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		object-fit: cover;
+	}
 
-  section.info-container {
-    animation: fade-in 350ms cubic-bezier(.5,.18,.57,.87);
-    width: 88%;
-    border-bottom-left-radius: 10px;
-    position: absolute;
-    padding: 5px;
-    bottom: 0;
-    background-color: hsla(255, 255, 255, .9);
+	section.info-container {
+		animation: fade-in 350ms cubic-bezier(0.5, 0.18, 0.57, 0.87);
+		width: 88%;
+		position: absolute;
+		border: 2px solid $primary-dark;
+		border-radius: 10px;
+		padding-bottom: 5px;
+		background-color: hsla(255, 255, 255, 0.9);
 
-    div.info-box {
-      display: flex;
-      justify-content: space-around;
+		h3 {
+			padding: 5px;
+			background-color: $primary-dark;
+			color: $font-lighter !important;
+		}
 
-      span.title {
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 5px;
-        background-color: transparent;
-        color: $font-dark;
-      }
+		div.info-box {
+			display: flex;
+			justify-content: space-around;
 
-      p {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-        color: $font-lighter;
+			span.title {
+				font-size: 1rem;
+				font-weight: bold;
+				background-color: transparent;
+				color: $font-dark;
+			}
 
-        span {
-          font-size: .9rem;
-          margin: 5px 10px;
-          text-align: center;
-          padding: 5px;
-          border-radius: 10px;
-          background-color: $font-dark;
-          line-height: 100%;
-          position: relative;
+			p {
+				flex: 2;
+				display: flex;
+				flex-direction: column;
+				color: $font-lighter;
 
-          img {
-            width: 1rem;
-            position: absolute;
-            right: 10px;
-            top: 5px;
-          }
-        }
-      }
+				span {
+					font-size: 0.8rem;
+					margin: 5px 10px 0px 10px;
+					text-align: center;
+					padding: 4px;
+					border-radius: 5px;
+					background-color: $font-dark;
+					line-height: 100%;
+					position: relative;
 
-      p.solo-project {
-        flex: 1;
-        width: 20%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        color: $font-lighter;
-      }
+					img {
+						width: 0.8rem;
+						position: absolute;
+						right: 15px;
+					}
+				}
+			}
 
-      a {
-        color: $font-lighter;
-      }
-    }
+			p.solo-project {
+				flex: 1;
+				width: 20%;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+				color: $font-lighter;
+			}
 
-    h3 {
-      text-align: center;
-      color: $font-light;
-    }
-    
-    h4 {
-      border-bottom: 1px solid $font-light;
-      color: $font-darker;
-      padding: 5px 15px;
-      text-indent: 30px;
-    }
+			a {
+				color: $font-lighter;
+			}
+		}
 
-  }
+		h3 {
+			text-align: center;
+			color: $font-light;
+		}
 
-  div.project-icon-container {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 12%;
-    height: 100%;
-    display: flex;
-    padding: 5px;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.8) 20%, hsla(0, 0%, 100%, 0.8) 80%, hsla(0, 0%, 100%, 0) 100%);    
-    position: absolute;
-    right: 0;
-    top: 0;
+		h4 {
+			border-bottom: 1px solid $font-light;
+			color: $font-darker;
+			padding: 5px 15px;
+			text-indent: 30px;
+		}
+	}
 
-    a {
-      display: block;
-      text-align: center;
-      margin: 10px 0;
-      color: black;
-      font-size: .8rem;
-      color: $font-light;
-      text-shadow: 1px 1px 2px $font-lighter;
-    }
+	div.project-icon-container {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		width: 12%;
+		height: 100%;
+		display: flex;
+		padding: 5px;
+		flex-direction: column;
+		justify-content: center;
+		background: linear-gradient(
+			180deg,
+			hsla(0, 0%, 100%, 0) 0%,
+			hsla(0, 0%, 100%, 0.8) 20%,
+			hsla(0, 0%, 100%, 0.8) 80%,
+			hsla(0, 0%, 100%, 0) 100%
+		);
+		position: absolute;
+		right: 0;
+		top: 0;
 
-    a img {
-      width: 100%;
-    }
-  }
+		a {
+			display: block;
+			text-align: center;
+			margin: 10px 0;
+			color: black;
+			font-size: 0.8rem;
+			color: $font-light;
+			text-shadow: 1px 1px 2px $font-lighter;
+		}
+
+		a img {
+			width: 100%;
+		}
+	}
 }
 
 @media #{$media-query-phone} {
-  article.project-box {
-    min-width: 320px;
-    height: auto;
-    padding: 0;
+	article.project-box {
+		min-width: 320px;
+		height: auto;
+		padding: 0;
 
-    div.project-icon-container {
-      a {
-        font-size: .6rem;
-      }
-      a img {
-        margin: 0;
-      }
-    }
-  }
-
-
+		div.project-icon-container {
+			a {
+				font-size: 0.6rem;
+			}
+			a img {
+				margin: 0;
+			}
+		}
+	}
 }
